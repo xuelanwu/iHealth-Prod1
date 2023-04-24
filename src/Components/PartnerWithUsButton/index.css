@@ -1,0 +1,14 @@
+.partner-with-us-bttn {
+  background: #07235b;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 34px;
+  color: #ffffff;
+  width: 200px;
+  height: 55px;
+}

@@ -1,0 +1,34 @@
+.how-it-works-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.how-it-works-img {
+  width: 200px;
+  height: 200px;
+}
+
+.how-it-works-subtitle {
+  width: 305px;
+  height: 66px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 33px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.how-it-works-content {
+  width: 250px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+}
