@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+  background: #07235b;
+  color: white;
+}
+.logo img {
+  display: flex;
+  align-items: center;
+  border-radius: 5rem;
+  width: 70%;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+  height: 46px;
+}
+.nav-links a:hover,
+.nav-link a.active {
+  color: #60b6f1;
+}
+
+.home,
+.services,
+.who-we-are,
+.research,
+.signin,
+.donate {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.donate {
+  color: #07235b;
+  background: #dde8f0;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: normal;
+  align-self: center;
+}

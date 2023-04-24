@@ -1,0 +1,37 @@
+.community-wrapper {
+  position: absolute;
+  width: 100%;
+  background: #07235b;
+  border: 1px solid #000000;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+  height: 250px;
+  top: 79rem;
+}
+.community-text {
+  margin-top: 40px;
+}
+.community-text h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+  height: 103px;
+  text-align: center;
+  letter-spacing: -0.045em;
+}
+
+.community-text p {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-image img {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+  position: relative;
+  text-align: center;
+}
+
+.comitted {
+  position: absolute;
+  top: 225px;
+  color: #07235b;
+  width: 345px;
+  height: 66px;
+  left: 110px;
+  font-weight: 700;
+}
+
+.healthcare {
+  position: absolute;
+  top: 275px;
+  width: 345px;
+  height: 66px;
+  left: 110px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+}
+.complex {
+  position: absolute;
+  top: 466px;
+  color: #c33418;
+  width: 707px;
+  height: 94px;
+  left: 110px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.integrated {
+  position: absolute;
+  top: 591px;
+  width: 408px;
+  height: 140px;
+  left: 110px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 46px;
+}
