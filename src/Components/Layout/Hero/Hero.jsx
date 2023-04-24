@@ -1,5 +1,5 @@
 import React from "react";
-import Community from "../Community/community";
+import Community from "../Community/Community";
 import "./Hero.css";
 import image from "../../../Assets/Images/happy-doctor.jpg";
 const Hero = () => {

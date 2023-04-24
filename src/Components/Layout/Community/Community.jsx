@@ -2,7 +2,7 @@ import React from "react";
 import Teams from "../Teams/Teams";
 import "./Community.css";
 
-const community = () => {
+const Community = () => {
   return (
     <>
       <div className="community-wrapper">
@@ -21,4 +21,4 @@ const community = () => {
   );
 };
 
-export default community;
+export default Community;
