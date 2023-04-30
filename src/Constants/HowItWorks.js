@@ -1,9 +1,9 @@
-import step1Image from "../Assets/Images/step-1-health-and-wellness-provider-lookup.png";
-import step2Image from "../Assets/Images/step-2-sign-up.png";
-import step3Image from "../Assets/Images/step-3-ai-for-appointments.png";
-import step4Image from "../Assets/Images/step-4-electronic-health-records-integration.png";
-import step5Image from "../Assets/Images/step-5-highly-coordinated-health-and-wellness.png";
-import step6Image from "../Assets/Images/step-6-making-new-friends.png";
+import step1Image from "../Assets/Images/step-1-health-and-wellness-provider-lookup.svg";
+import step2Image from "../Assets/Images/step-2-sign-up.svg";
+import step3Image from "../Assets/Images/step-3-ai-for-appointments.svg";
+import step4Image from "../Assets/Images/step-4-electronic-health-records-integration.svg";
+import step5Image from "../Assets/Images/step-5-highly-coordinated-health-and-wellness.svg";
+// import step6Image from "../Assets/Images/step-6-making-new-friends.svg";
 
 const HowItWorksSteps = [
   {
@@ -12,10 +12,9 @@ const HowItWorksSteps = [
     content:
       "Enter your search criteria, browse results, contact the provider.",
   },
-
   {
     image: step2Image,
-    title: "2-Sign up",
+    title: "2-Sign up for free today",
     content: "In just 2-3 minutes, sign up/ opt-in for membership",
   },
   {
@@ -28,17 +27,11 @@ const HowItWorksSteps = [
     image: step4Image,
     title: "4-Electronic Health Records (EHR) integration ",
     content:
-      "Provide patients with easy access to their health information, while also enabling healthcare providers to have a more complete view of a patient's health history. Interoperability enables healthcare providers to share and access patient EHRs across different healthcare systems, while strict security and privacy regulations protect patient health information.",
+      "Provide patients with easy access to their health information, while also enabling healthcare providers to have a more complete view of a patient's health history.",
   },
   {
     image: step5Image,
-    title: "5-Highly Coordinated Health and Wellness",
-    content:
-      "Member Benefit: Each member will experience highly coordinated health and wellness (emotional / mental, developmental, dietary and nutritional, occupational, physical, social, etc.) care ",
-  },
-  {
-    image: step6Image,
-    title: "6-Making New Friends ",
+    title: "5-Making New Friends",
     content:
       "The community portal will help patients network with others living with the same condition to support, learn, inspire, feel a sense of fellowship, safety and belonging",
   },

@@ -6,7 +6,7 @@ import PartnerWithUs from "./PartnerWithUs";
 const index = () => {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <HowItWorks />
       <PartnerWithUs />
     </>
