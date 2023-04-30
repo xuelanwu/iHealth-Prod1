@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ArrowRight, ArrowDropDown } from "@mui/icons-material";
 
 import "./index.css";
 
@@ -10,9 +11,13 @@ const BenefitBlock = ({ benefit }) => {
   };
   return (
     <div className="benefit-block">
-      <h3 onClick={toggleDetail} className="benefit-title">
-        {`${benefit.title} >>`}
-      </h3>
+      <div className="benefit-title-box">
+        <h3 onClick={toggleDetail} className="benefit-title">
+          {benefit.title}
+          <span></span>
+        </h3>
+        {showDetail ? <ArrowDropDown /> : <ArrowRight />}
+      </div>
 
       <p className={`benefit-text ${showDetail ? "show" : ""}`}>
         {benefit.content}

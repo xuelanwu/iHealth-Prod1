@@ -1,11 +1,9 @@
-.benefit-title {
+.benefit-title-box {
   cursor: pointer;
   color: #07235b;
   transition: all 1s ease-in-out;
-}
-
-.benefit-title:hover {
-  color: #405395;
+  display: flex;
+  align-items: center;
 }
 
 .benefit-text {
