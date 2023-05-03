@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 import HowItWorksCard from "../../../Components/HowItWorksCard";
-import BenefitBlock from "../../../Components/BenefitBlock";
+import BenefitCard from "../../../Components/BenefitCard";
 
 import HowItWorksSteps from "../../../Constants/HowItWorks.js";
 import Benefit from "../../../Constants/Benefit.js";
@@ -9,7 +9,6 @@ import Benefit from "../../../Constants/Benefit.js";
 import "./index.css";
 
 const HowItWorks = () => {
-  console.log(Benefit);
   return (
     <div className="how-it-works-container">
       <h1 className="how-it-works-title">How It Works</h1>
@@ -27,8 +26,7 @@ const HowItWorks = () => {
         </div>
         <div className="how-it-works-benefit-container">
           {Benefit.map((benefit) => {
-            console.log("map", Benefit);
-            return <BenefitBlock key={benefit.title} benefit={benefit} />;
+            return <BenefitCard key={benefit.title} benefit={benefit} />;
           })}
         </div>
       </div>

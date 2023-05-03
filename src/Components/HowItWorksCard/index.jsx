@@ -25,6 +25,7 @@ const HowItWorksCard = ({ icon, title, content, idx }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className="how-it-works-card" key={title}>
       <div className="how-it-works-icon-block">

@@ -11,6 +11,7 @@
   color: #07235b;
   width: 200px;
   height: 55px;
+  cursor: pointer;
 }
 
 .partner-with-us-bttn:hover {
