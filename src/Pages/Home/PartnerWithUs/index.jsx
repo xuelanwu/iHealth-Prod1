@@ -31,7 +31,6 @@ const PartnerWithUs = () => {
         const rectRight = slideInRightDiv.getBoundingClientRect();
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight;
-
         if (rectLeft.top >= 0 && rectLeft.bottom <= windowHeight) {
           setSlideInLeft(true);
         } else setSlideInLeft(false);

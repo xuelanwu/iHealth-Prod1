@@ -3,6 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.8s;
+  transition-delay: 0s;
+  transition-delay: 0.2s;
+}
+
+.how-it-works-card.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .how-it-works-icon-block {
@@ -47,10 +57,10 @@
   font-size: 1rem;
   line-height: 1.5;
   color: #062758;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  /* opacity: 0;
+  transition: opacity 1s ease-in-out; */
 }
 
-.how-it-works-content.visible {
+/* .how-it-works-content.visible {
   opacity: 1;
-}
+} */
