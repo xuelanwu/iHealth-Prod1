@@ -9,15 +9,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 7rem;
+  height: 10rem;
   background: #07235b;
   color: white;
+  width: 100%;
 }
 .logo img {
+  height: 8rem;
   display: flex;
   align-items: center;
-  border-radius: 5rem;
-  width: 70%;
+  border-radius: 8rem;
+  width: 100%;
 }
 .nav-links {
   display: flex;
@@ -33,15 +35,16 @@
 
 .home,
 .services,
-.who-we-are,
+.about-us,
 .research,
 .signin,
 .donate {
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  padding: 15px 30px;
+  font-size: 20px;
+  padding: 15px 26px;
   cursor: pointer;
+  max-width: fit-content;
 }
 
 .donate {
@@ -51,4 +54,17 @@
   border-radius: 8px;
   font-size: normal;
   align-self: center;
+}
+.signin {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  padding: 15px 26px;
+  cursor: pointer;
+}
+.signin:hover,
+.signin a.active {
+  text-decoration: underline;
+  color: white !important ;
+  font-weight: 300;
 }

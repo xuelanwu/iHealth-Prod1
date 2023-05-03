@@ -6,9 +6,10 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home/index";
 import Services from "./Pages/Services/index.jsx";
-import Whoweare from "./Pages/Who-we-are/index";
+import Aboutus from "./Pages/About-us";
 import Research from "./Pages/Research/index";
 import Signin from "./Pages/Sigin-in/index";
+import Signup from "./Pages/Sign-up/index";
 import Donate from "./Pages/Donate/index";
 import RootLayout from "./Pages/Root";
 
@@ -22,9 +23,10 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "/services", element: <Services /> },
-        { path: "/who-we-are", element: <Whoweare /> },
+        { path: "/about-us", element: <Aboutus /> },
         { path: "/research", element: <Research /> },
-        { path: "/signin", element: <Signin /> },
+        { path: "/sign-in", element: <Signin /> },
+        { path: "/sign-up", element: <Signup /> },
         { path: "/donate", element: <Donate /> },
       ],
     },

@@ -4,57 +4,64 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
-.hero-image img {
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  transform: rotateY(180deg);
-  position: relative;
-  text-align: center;
+.hero-wrapper {
+  background: linear-gradient(to left, #e2edf7, #def0ff);
+  height: 60rem;
+}
+.hero-image-container img {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin-left: auto;
+  padding: 5rem;
+  height: 65rem;
+  aspect-ratio: 16/0;
 }
 
 .comitted {
   position: absolute;
-  top: 225px;
+  top: 16.25rem;
   color: #07235b;
-  width: 345px;
-  height: 66px;
-  left: 110px;
+  max-width: 20%;
+  height: 4.125rem;
+  left: 6.875rem;
   font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.045em;
 }
 
 .healthcare {
   position: absolute;
-  top: 275px;
-  width: 345px;
-  height: 66px;
-  left: 110px;
+  top: 20rem;
+  max-width: min-content;
+  height: 14.125rem;
+  left: 6.875rem;
+  line-height: 4.5rem;
   font-style: normal;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 3.438rem;
 }
 .complex {
   position: absolute;
-  top: 466px;
+  top: 31.875rem;
   color: #c33418;
-  width: 707px;
-  height: 94px;
-  left: 110px;
+  max-width: 70%;
+  height: 5.875rem;
+  left: 6.875rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .integrated {
   position: absolute;
-  top: 591px;
-  width: 408px;
+  top: 630px;
+  width: 638px;
   height: 140px;
   left: 110px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 30px;
   line-height: 46px;
 }
