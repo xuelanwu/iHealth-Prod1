@@ -8,10 +8,10 @@ import {
   PartnerWithProviderTitle,
 } from "../../../Constants/PartnerWithUs";
 import partnerBabyImg from "../../../Assets/Images/partner-baby.jpg";
-import partnerBlueDressImg from "../../../Assets/Images/partner-blue-dress.jpg";
+import partnerXRayImg from "../../../Assets/Images/partner-x-ray.jpg";
 import partnerHeartImg from "../../../Assets/Images/partner-heart.jpg";
 import partnerMassageImg from "../../../Assets/Images/partner-massage.jpg";
-import partnerOrangeShirtImg from "../../../Assets/Images/partner-orange-shirt.jpg";
+import partnerElectronicHealthRecordImg from "../../../Assets/Images/partner-electronic-health-record.jpg";
 import partnerSmileImg from "../../../Assets/Images/partner-smile.jpg";
 
 import "./index.css";
@@ -91,7 +91,7 @@ const PartnerWithUs = () => {
           ></img>
           <div className="partner-with-us-img-stack">
             <img src={partnerMassageImg}></img>
-            <img src={partnerBlueDressImg}></img>
+            <img src={partnerSmileImg}></img>
           </div>
         </div>
       </div>
@@ -99,8 +99,8 @@ const PartnerWithUs = () => {
       <div className="partner-with-us-inner" ref={slideInRightRef}>
         <div className="partner-with-us-inner-img">
           <div className="partner-with-us-img-stack">
-            <img src={partnerOrangeShirtImg}></img>
-            <img src={partnerSmileImg}></img>
+            <img src={partnerElectronicHealthRecordImg}></img>
+            <img src={partnerXRayImg}></img>
           </div>
           <img
             className="partner-with-us-inner-img-solo"
