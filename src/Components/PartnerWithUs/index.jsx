@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import PartnerWithUsButton from "src/Components/PartnerWithUsButton";
-import PartnerWithUsTextTitle from "src/Components/PartnerWithUsTextTitle";
+import PartnerWithUsButton from "src/Components/PartnerWithUs/PartnerWithUsButton";
+import PartnerWithUsTextTitle from "src/Components/PartnerWithUs/PartnerWithUsTextTitle";
 
 import {
   PartnerWithHealthSystemTitle,
   PartnerWithProviderTitle,
-} from "../../../Constants/PartnerWithUs";
-import partnerBabyImg from "../../../Assets/Images/partner-baby.jpg";
-import partnerXRayImg from "../../../Assets/Images/partner-x-ray.jpg";
-import partnerHeartImg from "../../../Assets/Images/partner-heart.jpg";
-import partnerMassageImg from "../../../Assets/Images/partner-massage.jpg";
-import partnerElectronicHealthRecordImg from "../../../Assets/Images/partner-electronic-health-record.jpg";
-import partnerSmileImg from "../../../Assets/Images/partner-smile.jpg";
+} from "../../Constants/PartnerWithUs";
+import partnerBabyImg from "../../Assets/Images/partner-baby.jpg";
+import partnerXRayImg from "../../Assets/Images/partner-x-ray.jpg";
+import partnerHeartImg from "../../Assets/Images/partner-heart.jpg";
+import partnerMassageImg from "../../Assets/Images/partner-massage.jpg";
+import partnerElectronicHealthRecordImg from "../../Assets/Images/partner-electronic-health-record.jpg";
+import partnerSmileImg from "../../Assets/Images/partner-smile.jpg";
 
 import "./index.css";
 

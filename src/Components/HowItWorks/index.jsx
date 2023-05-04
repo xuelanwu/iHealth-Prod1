@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { throttle } from "lodash";
 
-import HowItWorksCard from "../../../Components/HowItWorksCard";
-import BenefitCard from "../../../Components/BenefitCard";
+import HowItWorksCard from "./HowItWorksCard";
+import BenefitCard from "./BenefitCard";
 
-import HowItWorksSteps from "../../../Constants/HowItWorks.js";
-import Benefit from "../../../Constants/Benefit.js";
+import HowItWorksSteps from "../../Constants/HowItWorks.js";
+import Benefit from "../../Constants/Benefit.js";
 
 import "./index.css";
 
