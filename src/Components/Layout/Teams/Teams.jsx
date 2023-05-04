@@ -1,6 +1,5 @@
 import React from "react";
 import "./Teams.css";
-// import Image from "../../Assets/happy-doctor.jpg";
 
 const Teams = () => {
   const TeamsData = [

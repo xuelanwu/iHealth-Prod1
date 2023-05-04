@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../../Assets/Brand/Confidential-SN.jpg";
+import logo from "../../../Assets/Brand/Confidential-logo.png";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import "./Navbar.css";
+import { red } from "@mui/material/colors";
 
 const Navbar = () => {
   return (
@@ -20,15 +22,21 @@ const Navbar = () => {
           <NavLink to="/services" className="services">
             <li>Services</li>
           </NavLink>
-          <NavLink to="/who-we-are" className="who-we-are">
-            <li>Who We Are</li>
+          <NavLink to="/about-us" className="about-us">
+            <li>About Us</li>
           </NavLink>
           <NavLink to="/research" className="research">
             <li>Research</li>
           </NavLink>
-          <NavLink to="/signin" className="signin">
-            <li>Sign In</li>
+
+          <NavLink to="/sign-in" className="signin">
+            <li>Sign up or Log In</li>
+            <AccountCircleOutlinedIcon
+              className="circle-icon"
+              sx={{ fontSize: 25, marginLeft: 0.5 }}
+            />
           </NavLink>
+
           <NavLink to="/donate" className="donate">
             <li>Donate</li>
           </NavLink>
