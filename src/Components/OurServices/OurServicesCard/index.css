@@ -1,0 +1,42 @@
+.home-page-our-services-card {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-page-our-services-icon {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  background: #07235b;
+  border-radius: 50%;
+}
+
+.home-page-our-services-hover {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  gap: 1.5rem;
+  padding: 1rem;
+  color: #07235b;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.home-page-our-services-content {
+  color: rgba(0, 0, 0, 0.4);
+  transition: color 0.5s ease-in-out;
+}
+
+.home-page-our-services-hover:hover {
+  background: #07235b;
+  color: #fff;
+}
+
+.home-page-our-services-hover:hover .home-page-our-services-content {
+  color: #fff;
+}
