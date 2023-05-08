@@ -1,9 +1,8 @@
-import step1Image from "../Assets/Images/step-1-health-and-wellness-provider-lookup.svg";
-import step2Image from "../Assets/Images/step-2-sign-up.svg";
-import step3Image from "../Assets/Images/step-3-ai-for-appointments.svg";
-import step4Image from "../Assets/Images/step-4-electronic-health-records-integration.svg";
-import step5Image from "../Assets/Images/step-5-highly-coordinated-health-and-wellness.svg";
-// import step6Image from "../Assets/Images/step-6-making-new-friends.svg";
+import step1Image from "../Assets/Icons/step-1-health-and-wellness-provider-lookup.svg";
+import step2Image from "../Assets/Icons/step-2-sign-up.svg";
+import step3Image from "../Assets/Icons/step-3-ai-for-appointments.svg";
+import step4Image from "../Assets/Icons/step-4-electronic-health-records-integration.svg";
+import step5Image from "../Assets/Icons/step-5-highly-coordinated-health-and-wellness.svg";
 
 const HowItWorksSteps = [
   {
