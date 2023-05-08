@@ -27,4 +27,12 @@
   align-items: stretch;
   gap: 2rem;
   padding-top: 5rem;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.home-page-our-services-inner.slide-in {
+  opacity: 1;
+  transform: translateX(0);
 }
