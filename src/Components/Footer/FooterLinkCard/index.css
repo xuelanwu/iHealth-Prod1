@@ -1,0 +1,23 @@
+.footer-link-card,
+.footer-link-links-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link-card {
+  gap: 2rem;
+}
+
+.footer-link-links-block {
+  gap: 1rem;
+}
+
+.footer-link-title {
+  font-weight: 700;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
