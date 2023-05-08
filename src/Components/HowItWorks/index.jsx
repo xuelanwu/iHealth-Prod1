@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { throttle } from "lodash";
 
 import HowItWorksCard from "./HowItWorksCard";
 import BenefitCard from "./BenefitCard";
