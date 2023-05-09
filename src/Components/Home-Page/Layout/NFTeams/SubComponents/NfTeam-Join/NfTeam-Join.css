@@ -84,7 +84,9 @@
 
 #nfteam-join-button-join > *:nth-child(3):hover
 {
-    background:#18487b;;
+    background:#ffffff;
+    color: #07235B;
+    border-color: #07235B;
 }
 
 
