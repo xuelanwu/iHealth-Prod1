@@ -33,7 +33,7 @@ function NfTeamInfo()
                       <li>{arg.cardText1}</li>
                     </ol>
                   </div>
-                  <a href={arg.DetailsLink}>See Details</a>  
+                  <a href={arg.DetailsLink}>Learn More &gt;</a>  
                 </div>
               )
           })

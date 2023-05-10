@@ -11,7 +11,6 @@
 .input-wrapper {
   display: flex;
   justify-content: space-evenly;
-  padding: 20px;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -24,10 +23,6 @@
   max-width: 100px;
   width: 2rem;
 }
-/* .frame-container .input-wrapper h6 {
-  font-size: 20px;
-  position: relative;
-} */
 .search-btn {
   display: flex;
   align-items: center;
@@ -48,7 +43,7 @@
 .frame-donate {
   width: 7rem;
   height: 40px;
-  background: #60B6F1;;
+  background: #0D99FF;
   text-align: center;
   border-radius: 5px;
 }
@@ -75,6 +70,7 @@
   color: #B3B3B3;
   
 }
+
 .search-donate {
   display: flex;
   flex-direction: row;
@@ -83,25 +79,27 @@
 .dropdown-content{
   position: absolute;
   display: grid;
-  background-color: #60B6F1;
+  background-color: #0D99FF;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: 400;
   color: white;
-  width: fit-content;
+  max-width:fit-content;
   border-radius: 5px;
-  left: 40px;
-  top: 60%;
+  top: 90%;
+  padding: 2px;
+  margin-left: -15px;
 }
 .dropdown-item{
-  padding: 10px;
+  font-size: 15px;
+  padding: 7px 2px;
   cursor: pointer;
   transition: all 0.2s;
 }
 .dropdown-item:hover{
-  background: 
-  #32508C;
+  background: #062758;
   border-radius: 3px;
 }
+
 
 .dropdown-text{
   cursor: pointer;
@@ -109,11 +107,13 @@
 
 }
 .dropdown{
+  position: relative;
   padding: 10px 14px;
   user-select: none;
   border: 1px solid #b3b3b3;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px; 
+  margin-top: 20px;
 
   
 }
@@ -131,4 +131,25 @@
   border: 1px solid #b3b3b3;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px; 
+}
+.text-disease {
+  margin-bottom: 18px;
+}
+.text-disease small{
+  position: absolute;
+ top: 20%;
+ margin: 0px 10px;
+ font-size: 14px;
+ font-weight: 500;
+ color: rgba(0, 0, 0, 0.65);
+}
+
+.small{
+  position: absolute;
+  top: 25%;
+  line-height: 10px;
+  margin: 0px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
 }

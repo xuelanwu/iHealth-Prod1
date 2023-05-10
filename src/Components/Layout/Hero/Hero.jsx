@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import Frame from "../Frame/Frame";
+import Provider from "../Provider/Provider";
 import Community from "../Community/Community";
 import "./Hero.css";
 import image from "../../../Assets/Images/0ed01787-00bc-4b3f-b598-ef3ca2ee698c 2.png";
+
+
+
 const Hero = () => {
   const [selected, setSelected] = useState("Select Disease");
+
   return (
     <>
       <div className="hero-wrapper">
@@ -21,7 +25,7 @@ const Hero = () => {
           </h4>
         </div>
       </div>
-      <Frame selected={selected} setSelected={setSelected} />
+      <Provider selected={selected} setSelected={setSelected} />
       <Community />
     </>
   );
