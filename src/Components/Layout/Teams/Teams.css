@@ -12,26 +12,32 @@
   justify-content: space-around;
   gap: 5rem;
 }
+
+.teams-info p {
+  color: #757575;
+}
+
 .teams-info {
-  color: white;
-  transition: 0.4s all ease-out;
+  color: #07235b ;
+ transition: 0.5s all ease-out;
   width: 28.375rem;
   height: 7rem;
-  background-color: #07235b;
+  background-color:white;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   border-radius: 10px;
   border: 2px solid rgba(181, 181, 181, 0.284);
+  cursor: pointer;
+ 
 }
 
 .teams-info:hover {
-  transform: scale(1.04);
-  background: linear-gradient(to left, rgba(35, 35, 88, 0.824), #07235b);
-  border: 3px solid rgb(208, 205, 205);
+  transform: scale(1.08);
+  background: #07235b;
+  border: 1px solid #07235b;
+  color: white;
 }
 
-.teams-info p {
-  color: #757575;
-}
+

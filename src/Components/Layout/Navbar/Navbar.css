@@ -36,9 +36,8 @@
 .home,
 .services,
 .about-us,
-.research,
-.signin,
-.donate {
+.research
+ {
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -48,14 +47,25 @@
 }
 
 .donate {
-  color: #07235b;
-  background: #dde8f0;
+  text-decoration: none;
+  color:#07235b;
+  background: white;
+  font-size: 20px;
   border: 2px solid white;
   border-radius: 8px;
   font-size: normal;
   align-self: center;
+  padding: 15px 26px;
+}
+.donate:hover {
+  background: #0D99FF;
+  border: 2px solid #07235b;
+  color:white !important;
+  padding: 15px 26px;
+  border-radius: 8px;
 }
 .signin {
+  text-decoration: none;
   display: flex;
   color: white;
   font-size: 20px;
@@ -67,4 +77,6 @@
   text-decoration: underline;
   color: white !important ;
   font-weight: 300;
+  padding: 15px 26px;
+  font-size: 20px;
 }

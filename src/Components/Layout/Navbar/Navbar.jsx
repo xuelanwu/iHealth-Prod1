@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import logo from "../../../Assets/Brand/Confidential-logo.png";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import "./Navbar.css";
-import { red } from "@mui/material/colors";
 
 const Navbar = () => {
   return (
