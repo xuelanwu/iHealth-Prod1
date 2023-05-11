@@ -8,6 +8,7 @@
   background: linear-gradient(to left, #e2edf7, #def0ff);
   height: 60rem;
 }
+
 .hero-image-container img {
   display: flex;
   justify-content: flex-end;
@@ -22,7 +23,7 @@
   position: absolute;
   top: 16.25rem;
   color: #07235b;
-  max-width: 20%;
+  width: 20%;
   height: 4.125rem;
   left: 6.875rem;
   font-weight: 700;
@@ -33,7 +34,7 @@
 .healthcare {
   position: absolute;
   top: 20rem;
-  max-width: min-content;
+  width: 5%;
   height: 14.125rem;
   left: 6.875rem;
   line-height: 4.5rem;
@@ -45,7 +46,7 @@
   position: absolute;
   top: 31.875rem;
   color: #c33418;
-  max-width: 70%;
+  max-width: 40%;
   height: 5.875rem;
   left: 6.875rem;
   font-style: normal;
@@ -64,4 +65,122 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 46px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (width <= 1540px){
+  .healthcare{
+    line-height: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .integrated {
+    width: 25%;
+    height: 140px;
+    left: 110px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 46px;
+  }
+}
+
+
+@media (width <= 1760px) {
+  .complex{
+    font-weight: 600;
+    font-size: 35px;
+  }
+}
+
+@media (width < 1695px) {
+  .complex{
+    font-size: 31px;
+  }
+  .integrated {
+    width: 34%;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+}
+@media (width < 1600px) {
+  .complex{
+    font-size: 30px;
+  }
+  .integrated {
+    width: 32%;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+@media (width < 1580px) {
+  .complex{
+    font-size: 28px;
+  }
+  .integrated {
+    width: 32%;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+@media (width < 1550px) {
+  .complex{
+    font-size: 25px;
+  }
+  .integrated{
+    width: 28%;
+    font-size: 19px;
+  }
+
+}
+@media (width < 1495px) {
+  .complex{
+    font-size: 23px;
+    font-weight: 700;
+  }
+  .integrated {
+    width: 30%;
+    font-weight: 700;
+    font-size: 16.5px;
+    line-height: 35px;
+  }
+}
+@media (width < 1455px) {
+  .complex{
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .hero-image-container img{
+    max-width: 65%;
+    margin-left: auto;
+    padding: 4rem;
+    height: 64rem;
+  }
+}
+@media (width < 1125px) {
+  .complex{
+    font-size: 16px;
+    font-weight: 900;
+  }
+  .comitted {
+      font-size: 18px;
+  }
+  .healthcare{
+    font-size: 30px;
+    line-height: 3.5rem;
+  }
+  .integrated {
+    width: 30%;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 35px;
+  }
 }

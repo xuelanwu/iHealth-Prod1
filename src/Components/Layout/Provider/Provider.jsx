@@ -7,6 +7,7 @@ import "./Provider.css";
 const Provider = ({ selected, setSelected }) => {
   const [isActive, setIsActive] = useState(false);
 
+
   const options = [
   
     "Neurofibromatosis(NF)", "Select Disease"];
@@ -36,7 +37,8 @@ const Provider = ({ selected, setSelected }) => {
       <div className="text-disease">
       <small>Disease</small>
         <div className="dropdown">
-          <span className="dropdown-text" onClick={(e) => setIsActive(!isActive)}>
+          <span className="dropdown-text" onClick={(e) => setIsActive(!isActive)} >
+            
             {selected} <ExpandMoreIcon sx={{ fontSize: 16, width:20 }} />
           </span>
           {isActive && (
@@ -47,6 +49,7 @@ const Provider = ({ selected, setSelected }) => {
                     setSelected(option);
                     setIsActive(false);
                   }} 
+              
                   className="dropdown-item"
                 >
                   {option }

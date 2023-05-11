@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../../Assets/Brand/Confidential-logo.png";
+import logo from "../../../Assets/Brand/ihealth logo final.png";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import "./Navbar.css";
 
@@ -33,6 +33,7 @@ const Navbar = () => {
             <AccountCircleOutlinedIcon
               className="circle-icon"
               sx={{ fontSize: 25, marginLeft: 0.5 }}
+              sm={{ fontSize:30}}
             />
           </NavLink>
 
