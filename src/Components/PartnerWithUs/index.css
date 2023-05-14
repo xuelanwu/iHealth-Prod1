@@ -1,35 +1,12 @@
 .partner-with-us-container {
-  background: #f8fafc;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8rem;
-  padding-bottom: 25rem;
-}
-
-.partner-with-us-title-block {
-  width: 100%;
-  padding: 2rem 6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  background-color: #062758;
-}
-
-.partner-with-us-title {
-  color: #fff;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 150%;
-  /* or 82px */
-  text-align: center;
+  padding: 8rem 0;
 }
 
 .partner-with-us-subtitle {
-  color: #fff;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
@@ -39,7 +16,7 @@
 }
 
 .partner-with-us-inner {
-  width: 80%;
+  width: 1000px;
   margin: auto;
   display: flex;
   justify-content: space-between;
