@@ -9,18 +9,17 @@
   flex-direction: column;
   align-items: center;
   padding: 3rem;
-  background: #07235b;
+  color: #07235b;
 }
 
 .home-page-our-services-title-block h2 {
-  color: #fff;
   font-weight: 600;
   font-size: 55px;
   line-height: 67px;
 }
 
 .home-page-our-services-inner {
-  width: 90%;
+  width: 1000px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -28,8 +27,8 @@
   gap: 2rem;
   padding-top: 5rem;
   opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transform: translateX(50%);
+  transition: opacity 0.8s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .home-page-our-services-inner.slide-in {
