@@ -11,7 +11,7 @@ import NfTeamSelectNfType from './SubComponents/NfTeam-Select-Nf-Type/NfTeam-Sel
 import NfTeamInfo from './SubComponents/NfTeam-Info/NfTeam-Info'
 
 
-function NFTeams() 
+function NFInformation() 
 {
   return (
     <>
@@ -27,4 +27,4 @@ function NFTeams()
   )
 }
 
-export default NFTeams
+export default NFInformation
