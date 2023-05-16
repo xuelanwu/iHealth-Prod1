@@ -2,23 +2,21 @@
 import React from 'react'
 
 //Import Styles
-import "./NFTeams.css"
+import "./NFInformation.css"
 
 //Import Local Files/Components
-import NfTeamHeader from './SubComponents/NfTeam-Header/NfTeam-Header'
-import NfTeamJoin from './SubComponents/NfTeam-Join/NfTeam-Join'
 import NfTeamSelectNfType from './SubComponents/NfTeam-Select-Nf-Type/NfTeam-Select-Nf-Type'
 import NfTeamInfo from './SubComponents/NfTeam-Info/NfTeam-Info'
+import NfIHub from './SubComponents/NfIHub/NfIHub'
 
 
 function NFInformation() 
 {
   return (
     <>
-        <main id='nfteam-container'>
+        <main id='nfinformation-container'>
 
-          <NfTeamHeader />
-          <NfTeamJoin />
+          <NfIHub />
           <NfTeamSelectNfType />
           <NfTeamInfo />
 
