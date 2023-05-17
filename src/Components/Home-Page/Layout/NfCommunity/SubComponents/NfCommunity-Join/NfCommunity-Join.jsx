@@ -25,7 +25,7 @@ function NfCommunityJoin()
             <div id='nfcommunity-join-button-container'>
               <p>Join NF Community</p>
               <p>Connect with other people, Share your story Join<br/> the discussion today</p>
-              <button>Join</button>
+              <a href='#NfIHub-container'>Join</a>
             </div>
           </div>
 

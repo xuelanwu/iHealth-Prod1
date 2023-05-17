@@ -13,13 +13,13 @@ function NfTeamSelectNfType()
     <>
       <section id='nfteam-select-nf-type'>
 
-        <p>Select Your Neurofibromatosis(NF) Type</p>
+        <p>Select Your Neurofibromatosis(NF) Type:</p>
         <div id='nfteam-select-user-select-group'>
-          {/* Depending on the functionality we can change the html elements or add state */}
-          <button onClick={()=>{settype('ANY')}} className={type == 'ANY' ? 'nfteam-select-user-select-group-BUTTON-active right-arrow' : 'nfteam-select-user-select-group-BUTTON'}>ANY</button>
+          {/* Depending on the functionality we can change the html elements or add state,  repetitive code fix this in the future changes */}
           <button onClick={()=>{settype('NF1')}} className={type == 'NF1' ? 'nfteam-select-user-select-group-BUTTON-active right-arrow' : 'nfteam-select-user-select-group-BUTTON'}>NF1</button>
           <button onClick={()=>{settype('NF2')}} className={type == 'NF2' ? 'nfteam-select-user-select-group-BUTTON-active right-arrow' : 'nfteam-select-user-select-group-BUTTON'}>NF2</button>
-          <button onClick={()=>{settype('schwannomatosis')}} className={type == 'schwannomatosis' ? 'nfteam-select-user-select-group-BUTTON-active right-arrow' : 'nfteam-select-user-select-group-BUTTON'}>Schwannomatosis</button>
+          <button onClick={()=>{settype('schwannomatosis')}} className={type == 'schwannomatosis' ? 'nfteam-select-user-select-group-BUTTON-active right-arrow' : 'nfteam-select-user-select-group-BUTTON'}>Schwannomatosis (NF3)</button>
+          <button onClick={()=>{settype('ANY')}} className={type == 'ANY' ? 'nfteam-select-user-select-group-BUTTON-active right-arrow' : 'nfteam-select-user-select-group-BUTTON'}>ANY</button>
         </div>
 
       </section>

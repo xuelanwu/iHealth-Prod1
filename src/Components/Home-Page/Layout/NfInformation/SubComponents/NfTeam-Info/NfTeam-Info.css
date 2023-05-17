@@ -3,7 +3,7 @@
     display: flex;
     place-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
     gap: 4rem;
 }
 
@@ -11,46 +11,73 @@
 /* Set Css rules for box containers */
 .nfteam-info-card-wrapper
 {
-    width: 537px;
-    height: 498.06px;
+    width: 31%;
+    height: 22vw;
     border: 3px solid rgba(7, 35, 91, 0.24);
     border-radius: 10px;
     position: relative;
+    transition: 0.5s;
 }
 
+
+.nfteam-info-card-wrapper:hover
+{
+    background: #062758;
+    color: #FFFFFF;
+    
+}
+
+.nfteam-info-card-wrapper:hover a, .nfteam-info-card-wrapper:hover .nfteam-info-list-wrapper > li
+{
+    color: #FFFFFF;
+}
+
+
+.nfteam-info-card-wrapper:hover .nfteam-info-card-TOP
+{
+    border: 2.825px solid rgb(255, 255, 255);
+    transform: scale3d(1.015, 1.05,1);
+}
 
 /* Set Css rules for top part of the box containers  */
 .nfteam-info-card-TOP
 {
     
-    height: 164px;
+    height: 33%;
     background: #062758;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border: 0.825px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8.25px;
     color: white;
     display: flex;
     flex-direction: row;
     place-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 0px 32px;
+    transform: scale3d(1.01, 1.03,1);
 }
 
 /* Set Css rules for icon/image container at top part  */
 .nfteam-info-card-TOP > div
 {
-    width: 60px;
-    height: 60px;
+    min-width: 3.4vw;
+    height: 3.4vw;
     background: #FFFFFF;
     border-radius: 50%;
     display: flex;
     place-content: center;
     align-items: center;
+    
 }
 
 /* Set Css rules for icon/image at top part  */
 .nfteam-info-card-TOP > div > img
 {
-    max-width: 40px;
+    min-width: 1.4vw;
+    max-width: 3.4vw;
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    object-fit: contain;
 }
 
 
@@ -60,8 +87,8 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.1dvw;
+    line-height: 120%;
     text-align: center;
     color: #FFFFFF;
 }
@@ -73,10 +100,9 @@
 {
     display: flex;
     flex-direction: column;
-    place-content: center;
     align-items: center;
-    height: 100%;
-    max-height: 300px;
+    transition: 0.5s;
+    
 }
 
 /* Set Css rules for listed text items ol element  */
@@ -85,18 +111,22 @@
     list-style-type: '\2713';
     flex-direction: column;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5vw;
+    margin-top: 2vw;
 }
 
 /* Set Css rules for l elements text items of ol element  */
 .nfteam-info-list-wrapper > li
 {
-    font-family: 'Inter';
+    font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.1dvw;
+    line-height: 150%;
     color: #000000;
+    cursor: pointer;
+    transition: 0.5s;
+
 }
 
 /* Set Css rules for Learn More link  */
@@ -104,14 +134,17 @@
 {
     position: absolute;
     left: 19%;
-    bottom: 10px;
-    font-family: 'Inter';
+    bottom: 1.4vw;
+    font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1.3dvw;
     line-height: 30px;
     text-decoration-line: none;
     color: #07235B;
+    cursor: pointer;
+    transition: 0.5s;
+
 }
 
 

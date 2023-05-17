@@ -109,6 +109,7 @@
     background: #07235B;
     transition: 0.2s;
     font-size: 0.9dvw;
+    text-decoration: none;
 }
 
 #nfcommunity-join-button-container > *:nth-child(3):hover
