@@ -26,7 +26,7 @@ const Services = [
     icon: Icon4,
     title: "Patient Advocacy",
     content:
-      "Our organization advocates for patients by working to improve the overall quality of care and access to treatment options for individuals living with complex diseases.",
+      "Our platform integrates directly with all major EHR systems, ensuring that patients have access to the most up-to-date information",
   },
 ];
 
