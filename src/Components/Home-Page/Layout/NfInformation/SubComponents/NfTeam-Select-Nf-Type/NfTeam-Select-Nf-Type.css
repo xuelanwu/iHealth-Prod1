@@ -81,7 +81,7 @@
 }
 
 
- .right-arrow::after
+.right-arrow::after
 {
     content: "";
     position: absolute;
@@ -117,3 +117,39 @@
 
     
 }
+
+@media only screen and (max-width: 750px)
+{
+    #nfteam-select-nf-type > p
+    {
+        font-size: 2vh;
+    }
+
+    #nfteam-select-user-select-group 
+    {
+        max-width: 56vw;
+    }
+
+    .nfteam-select-user-select-group-BUTTON
+    {
+        font-size: 3vw;
+        padding: 0px 21px;
+    }
+
+    .nfteam-select-user-select-group-BUTTON-active 
+    {
+        font-size: 3vw;
+        padding: 0px 17px;
+
+    }
+
+    .right-arrow::after
+    {
+        
+        
+        border-width: 18px 0 18px 24px;
+        right: -23px;
+    } 
+
+
+} 

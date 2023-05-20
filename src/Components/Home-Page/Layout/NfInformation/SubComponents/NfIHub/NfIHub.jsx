@@ -20,7 +20,7 @@ function NfIHub()
             </div>
 
             <div id='NfIHub-pic'>
-              <img src={ePic} alt='human with visible nerves' />
+              <img src={ePic} alt='human head with visible nerves' />
             </div>
           </div>
           

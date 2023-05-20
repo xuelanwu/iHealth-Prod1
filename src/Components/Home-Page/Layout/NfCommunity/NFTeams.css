@@ -44,3 +44,37 @@
     font-size: 32px;
     letter-spacing: -0.01em;
 }
+
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 1100px) 
+{
+    /* Set rules for Neurofibromatosis (NF) Team Paragraph */
+    #nfcommunity-header > p:nth-child(1)
+    {
+        font-size: 4vw;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 750px) 
+{
+    /* Set rules for Neurofibromatosis (NF) Team Paragraph */
+    #nfcommunity-header
+    {
+        align-items: center;
+    }
+
+    /* Set rules for NF Community section main contanier  */
+    #nfcommunity-container
+    {
+        
+        margin: 3rem 10%;
+    }
+
+    
+}

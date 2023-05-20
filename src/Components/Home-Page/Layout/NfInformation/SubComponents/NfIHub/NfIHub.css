@@ -1,11 +1,5 @@
 #NfIHub-container
 {
-    /* display: flex;
-    flex-direction: row;
-    place-content: center;
-    align-items: center;
-    gap: 9em;
-    margin: 10rem 0; */
     position: relative;
     margin: 9rem 0;
 }
@@ -65,9 +59,6 @@
 #NfIHub-pic
 {
     position: absolute;
-    /* width: 784px;
-    height: 525px; */
-
     bottom: -27%;
     right: -75%;
     z-index: -1;
@@ -86,12 +77,46 @@
 
 /* -------------------- Responsive Css Rules -------------------- */
 
-@media only screen and (max-width: 435px) 
+
+@media only screen and (max-width: 750px) 
 {
-    #nfteam-join-container
+
+    #NfIHub-hubInfo
     {
-        flex-wrap: wrap;
+        width: 38vw;
+        height: 52vw;
     }
 
-    
+    #NfIHub-pic > img
+    {
+        aspect-ratio: 17/7;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    #NfIHub-hubInfo-frame 
+    {
+        width: 70%;
+        height: 73%;
+        padding: 16px 5px;
+    }
+
+    #NfIHub-pic 
+    {
+        position: absolute;
+        bottom: -10%;
+        right: -159%;
+    }
+
+    #NfIHub-hubInfo-frame > p 
+    {
+        text-align: start;
+        font-size: 3.8dvw;
+    }
+
+    #NfIHub-hubInfo-frame > p::before
+    {
+        content: "NF ";
+    }
 }

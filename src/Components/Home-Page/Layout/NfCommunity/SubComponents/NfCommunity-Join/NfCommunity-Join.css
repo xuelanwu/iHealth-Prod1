@@ -128,10 +128,69 @@
 
 @media only screen and (max-width: 435px) 
 {
+
+    /* Set rules for NF Community Join section main container  */
     #nfcommunity-join-container
     {
         flex-wrap: wrap; /* This rules in not in effect will be changed for mobile version */
     }
 
+}
+
+
+@media only screen and (max-width: 750px) 
+{
+
+    /* Set rules for Video part */
+    #nfcommunity-join-video > * > video 
+    {
     
+        width: 23%;
+        height: 383px;
+        aspect-ratio: 16 / 5;
+        object-fit: cover;
+    }
+
+    /* Set rules for the NF community join container */
+    #nfcommunity-join-button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 11px 9px;
+        width: 100%;
+        height: 100%;
+        border:none;
+        
+    }
+
+    /* Set rules for Join Button part */
+    #nfcommunity-join-button-join 
+    {
+        width: 51%;
+        height: 77%;
+        top: 50%;
+        transform: translate3d(0px,-48%,0px);
+        right: -42px;
+    }
+
+    /* Set rules for first paragraph Join NF Community */
+    #nfcommunity-join-button-container > *:nth-child(1) 
+    {
+        font-size: 3.6dvw;
+    }
+
+    /* Set rules for second paragraph Connect with other people...*/
+    #nfcommunity-join-button-container > *:nth-child(2)
+    {
+        font-size: 2.6dvw;
+        text-shadow: 0 0 1px white;
+    }
+    
+    /* Set rules for Join Button */
+    #nfcommunity-join-button-container > *:nth-child(3)
+    {
+        font-size: 3.9dvw;
+        text-shadow: 0 0 1px white;
+    }
 }
