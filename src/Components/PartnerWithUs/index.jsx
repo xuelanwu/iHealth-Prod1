@@ -1,12 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import PartnerWithUsButton from "src/Components/PartnerWithUs/PartnerWithUsButton";
-import PartnerWithUsTextTitle from "src/Components/PartnerWithUs/PartnerWithUsTextTitle";
 
-import {
-  PartnerWithHealthSystemTitle,
-  PartnerWithProviderTitle,
-} from "../../Constants/PartnerWithUs";
 import partnerBabyImg from "../../Assets/Images/partner-baby.jpg";
 import partnerXRayImg from "../../Assets/Images/partner-x-ray.jpg";
 import partnerHeartImg from "../../Assets/Images/partner-heart.jpg";
@@ -46,29 +41,18 @@ const PartnerWithUs = () => {
 
   return (
     <div className="partner-with-us-container">
-      <div className="partner-with-us-title-block">
-        <h1 className="partner-with-us-title">
-          Revolutionize Your Patient Care
-        </h1>
-        <h2 className="partner-with-us-subtitle">
-          Discover Our Innovative Solutions for Medical and Wellness Practices,
-          Providers, and Health Systems
-        </h2>
-      </div>
-
       <div className="partner-with-us-inner" ref={slideInLeftRef}>
         <div
           className={`partner-with-us-inner-text-left ${
             slideInLeft ? "slide-in" : ""
           }`}
         >
-          <PartnerWithUsTextTitle
-            title={PartnerWithProviderTitle.title}
-            subtitle={PartnerWithProviderTitle.subtitle}
-          />
+          <h2>
+            Discover Our Innovative Solutions for Medical and Wellness
+            Practices, Providers, and Health Systems
+          </h2>
           <p className="partner-with-us-text-blue">
-            As a medical/ wellness provider you have the opportunity to pool
-            from our resource of patients who have gone through our system.
+            Revolutionize Your Patient Care
           </p>
           <div className="partner-with-us-text-with-checkmark-box">
             <p className="partner-with-us-text-with-checkmark">
@@ -112,10 +96,10 @@ const PartnerWithUs = () => {
             slideInRight ? "slide-in" : ""
           }`}
         >
-          <PartnerWithUsTextTitle
-            title={PartnerWithHealthSystemTitle.title}
-            subtitle={PartnerWithHealthSystemTitle.subtitle}
-          />
+          <h2>We work with Health Systems</h2>
+          <p className="partner-with-us-text-blue">
+            Revolutionize Your Patient Care
+          </p>
           <p className="partner-with-us-text-darkblue">
             If you are interested in partnering with us, please contact us to
             discuss potential collaboration opportunities. We look forward to
