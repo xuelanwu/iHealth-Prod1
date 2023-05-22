@@ -5,11 +5,11 @@ import InstagramIcon from "../Assets/Icons/social-instagram.svg";
 import YoutubeIcon from "../Assets/Icons/social-youtube.svg";
 
 const SocialMedia = [
-  { icon: FacebookIcon, url: "#" },
-  { icon: LinkedinIcon, url: "#" },
-  { icon: TwitterIcon, url: "#" },
-  { icon: InstagramIcon, url: "#" },
-  { icon: YoutubeIcon, url: "#" },
+  { icon: FacebookIcon, url: "/construction" },
+  { icon: LinkedinIcon, url: "/construction" },
+  { icon: TwitterIcon, url: "/construction" },
+  { icon: InstagramIcon, url: "/construction" },
+  { icon: YoutubeIcon, url: "/construction" },
 ];
 
 export default SocialMedia;
