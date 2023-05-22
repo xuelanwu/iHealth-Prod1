@@ -1,10 +1,7 @@
 //Import Libraries/Packages
 import React from "react";
 
-
-
 //Import Components
-import Footer from "src/Components/Footer";
 import Hero from "src/Components/Layout/Hero/Hero";
 import OurServices from "../../Components/OurServices";
 import HowItWorks from "../../Components/HowItWorks";
@@ -16,12 +13,11 @@ const index = () => {
   return (
     <>
       <Hero />
-      <NFCommunity /> 
+      <NFCommunity />
       <OurServices />
       <HowItWorks />
       <PartnerWithUs />
       <NFInformation />
-      <Footer />
     </>
   );
 };
