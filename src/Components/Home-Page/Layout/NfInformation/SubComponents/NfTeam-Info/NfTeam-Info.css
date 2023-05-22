@@ -152,12 +152,54 @@
 
 /* -------------------- Responsive Css Rules -------------------- */
 
-@media only screen and (max-width: 435px) 
+
+@media only screen and (max-width: 750px) 
 {
-    #nfteam-info
+
+    #nfteam-info 
     {
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nfteam-info-card-wrapper 
+    {
+        width: 60%;
+        height: 42vw;
     }
 
     
+
+    /* Set Css rules for icon/image container at top part  */
+    .nfteam-info-card-TOP > div
+    {
+        min-width: 6.4vw;
+        height: 6.4vw;
+    }
+    .nfteam-info-card-TOP > div > img 
+    {
+        max-width: 4.4vw;
+    }
+
+    .nfteam-info-card-TOP > p 
+    {
+        font-size: 2.1dvw;
+        user-select: none;
+    }
+
+    .nfteam-info-list-wrapper > li
+    {
+        font-size: 2.1dvw;
+        user-select: none;
+    }
+
+    .nfteam-info-list-wrapper
+    {
+        margin-top: 5vw;
+    }
+
+    .nfteam-info-card-wrapper > a 
+    {
+        font-size: 2.3dvw;
+        user-select: none;
+    }
 }
