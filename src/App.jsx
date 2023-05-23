@@ -29,7 +29,7 @@ function App() {
         { path: "/sign-in", element: <Signin /> },
         { path: "/sign-up", element: <Signup /> },
         { path: "/donate", element: <Donate /> },
-        { path: "*", element: <Other /> },
+        // { path: "*", element: <Other /> },
       ],
     },
   ]);
