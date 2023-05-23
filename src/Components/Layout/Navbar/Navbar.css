@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 7rem;
+  height: 6rem;
   background: #07235b;
   color: white;
   width: 100%;
@@ -41,7 +41,7 @@
  {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 26px;
   cursor: pointer;
   max-width: fit-content;
@@ -50,13 +50,13 @@
 .donate {
   text-decoration: none;
   color:#07235b;
-  background: white;
-  font-size: 20px;
-  border: 2px solid white;
-  border-radius: 8px;
+  background:#0D99FF;
+  font-size: 18px;
+  border: 2px solid #0D99FF;
+  border-radius: 10px;
   font-size: normal;
   align-self: center;
-  padding: 15px 26px;
+  padding: 9px 23px;
 }
 .donate:hover {
   background: #0D99FF;
@@ -69,7 +69,7 @@
   text-decoration: none;
   display: flex;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 26px;
   cursor: pointer;
 }
@@ -85,7 +85,22 @@
 
 
 /* MEDIA QUERIES */
-
+@media (width <=450px){
+  .signin{
+    padding: 10px !important ;
+  }
+}
+@media (width <=850px) {
+  .home,
+  .services,
+  .about-us,
+  .research {
+      display: none;
+  }
+  .donate{
+    margin-right: 2rem;
+  }
+}
 @media (width <= 1181px) {
   .home,
   .services,
@@ -105,7 +120,7 @@
     }
   .donate {
       font-size: 15px;
-      border: 1px solid white;
+      border: 1px solid #0D99FF;
       border-radius: 8px;
       padding: 12px 22.5px;
     }
@@ -136,7 +151,7 @@
   }
   .donate {
     font-size: 12px;
-    border: 1px solid white;
+    border: 1px solid#0D99FF;
     border-radius: 6px;
     padding: 10px 20px;
   }
