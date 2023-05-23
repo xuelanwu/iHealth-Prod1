@@ -40,13 +40,14 @@
 .benefit-flip-card-back {
   position: absolute;
   width: 100%;
-  height: 40vh;
-  -webkit-backface-visibility: hidden; /* Safari */
+  height: 60vh;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
 .benefit-flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
 
@@ -79,4 +80,13 @@
   font-size: 1.5rem;
   font-weight: 600;
   padding: 2rem;
+}
+
+/* mobile */
+@media(max-width:1200px) {
+  .benefit-card {
+    width: 50%;
+    margin-left: 25%;
+    padding: 0 70px;
+  }
 }

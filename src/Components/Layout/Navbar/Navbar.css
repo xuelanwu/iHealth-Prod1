@@ -2,18 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 6rem;
+  height: 7rem;
   background: #07235b;
   color: white;
   width: 100%;
 }
+
 .logo img {
   height: 7rem;
   display: flex;
@@ -22,6 +23,7 @@
   width: 100%;
   padding: 20px;
 }
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -29,6 +31,7 @@
   width: 70%;
   height: 46px;
 }
+
 .nav-links a:hover,
 .nav-link a.active {
   color: #60b6f1;
@@ -37,11 +40,10 @@
 .home,
 .services,
 .about-us,
-.research
- {
+.research {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   padding: 15px 26px;
   cursor: pointer;
   max-width: fit-content;
@@ -49,34 +51,37 @@
 
 .donate {
   text-decoration: none;
-  color:#07235b;
-  background:#0D99FF;
-  font-size: 18px;
-  border: 2px solid #0D99FF;
-  border-radius: 10px;
+  color: #07235b;
+  background: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 8px;
   font-size: normal;
   align-self: center;
-  padding: 9px 23px;
+  padding: 15px 26px;
 }
+
 .donate:hover {
   background: #0D99FF;
   border: 2px solid #07235b;
-  color:white !important;
+  color: white !important;
   padding: 15px 26px;
   border-radius: 8px;
 }
+
 .signin {
   text-decoration: none;
   display: flex;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   padding: 15px 26px;
   cursor: pointer;
 }
+
 .signin:hover,
 .signin a.active {
   text-decoration: underline;
-  color: white !important ;
+  color: white !important;
   font-weight: 300;
   padding: 15px 26px;
   font-size: 20px;
@@ -85,28 +90,13 @@
 
 
 /* MEDIA QUERIES */
-@media (width <=450px){
-  .signin{
-    padding: 10px !important ;
-  }
-}
-@media (width <=850px) {
+
+@media (width <=1181px) {
+
   .home,
   .services,
   .about-us,
   .research {
-      display: none;
-  }
-  .donate{
-    margin-right: 2rem;
-  }
-}
-@media (width <= 1181px) {
-  .home,
-  .services,
-  .about-us,
-  .research
-  {
     font-size: 15px;
     padding: 15px 25px;
   }
@@ -115,58 +105,67 @@
     font-size: 15px;
     padding: 15px 25px;
   }
-  .circle-icon{
+
+  .circle-icon {
     align-self: center;
-    }
+  }
+
   .donate {
-      font-size: 15px;
-      border: 1px solid #0D99FF;
-      border-radius: 8px;
-      padding: 12px 22.5px;
-    }
-  
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 12px 22.5px;
+  }
+
 }
 
 
 @media (width < 1271px) {
+
   .home,
   .services,
   .about-us,
-  .research
-  {
+  .research {
     font-size: 12px;
     font-weight: 500;
 
   }
+
   .signin {
     font-size: 12px;
     font-weight: 500;
   }
+
   .nav-links {
     width: 70%;
   }
+
   .logo img {
     width: 90%;
     padding: 25px;
   }
+
   .donate {
     font-size: 12px;
-    border: 1px solid#0D99FF;
+    border: 1px solid white;
     border-radius: 6px;
     padding: 10px 20px;
   }
-  .circle-icon{
+
+  .circle-icon {
     align-self: center;
-    }
-    .donate:hover {
-      border: 2px solid #07235b;
-      color:white !important;
-      padding: 8px 20px;
-      border-radius: 5px;
-    }
-    .signin:hover,
-    .signin a.active {
+  }
+
+  .donate:hover {
+    border: 2px solid #07235b;
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
+
+  .signin:hover,
+  .signin a.active {
     padding: 15px 26px;
     font-size: 12px;
-}
+  }
 }

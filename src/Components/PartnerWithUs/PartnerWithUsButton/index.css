@@ -1,21 +1,22 @@
 .partner-with-us-bttn {
-  background-color: #fff;
-  border: 1px solid #07235b;
+  color: #fff;
+  border: 1px solid #ffff;
   outline: none;
-  border-radius: 40px;
-  font-family: "Inter";
+  border-radius: 7px;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 34px;
-  color: #07235b;
+  background-color: #07235b;
   width: 200px;
   height: 55px;
   cursor: pointer;
+  display: block;
+  margin: auto;
 }
 
 .partner-with-us-bttn:hover {
-  background-color: #07235b;
-  color: #fff;
+  color: #07235b;
+  background-color: #fff;
   transition: background-color 0.5s ease-in-out;
 }

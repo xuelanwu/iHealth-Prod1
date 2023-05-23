@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 3rem;
   padding: 8rem 0;
 }
 
@@ -21,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   gap: 3rem;
+  height: 0.5%;
 }
 
 .partner-with-us-inner-img {
@@ -54,12 +55,13 @@
   flex-direction: column;
   gap: 2rem;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
 }
 
 .partner-with-us-inner-text-left {
   transform: translateX(-100px);
 }
+
 .partner-with-us-inner-text-right {
   transform: translateX(100px);
 }
@@ -68,24 +70,37 @@
 .partner-with-us-inner-text-right.slide-in {
   opacity: 1;
   transform: translateX(0);
+  color: #fff;
+  background-color: #07235B;
+  padding: 60px 40px;
+  width: 60%;
+  height: 20%;
 }
 
 .partner-with-us-text-darkblue {
-  font-family: "Inter";
+  /* font-family: "Inter"; */
   font-style: normal;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: #0e235b;
+  /* font-weight: 600; */
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+
 }
 
 .partner-with-us-text-blue {
-  font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  color: #295271;
+  text-align: justify;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px
+}
+
+.span-blue {
+  color: #0D99FF;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .partner-with-us-text-with-checkmark-box {
@@ -95,10 +110,43 @@
 }
 
 .partner-with-us-text-with-checkmark {
-  font-family: "Inter";
+  /* font-family: "Inter"; */
   font-style: normal;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 1.2rem;
   line-height: 1.5rem;
-  color: #041a45;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header-partner {
+  text-align: center;
+  padding: 0 100px;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #07235B;
+}
+
+.electronic {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* mobile */
+@media(max-width: 1200px) {
+  /* body {
+    padding: 0 100px;
+  }
+
+  .header-partner {
+    padding: 0;
+    margin: auto;
+  }
+
+  .partner-with-us-inner {
+    flex-direction: column;
+  }
+
+
+  .partner-with-us-inner-text-left.slide-in {} */
 }
