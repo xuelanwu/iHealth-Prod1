@@ -1,13 +1,15 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookIcon from "../Assets/Icons/social-facebook.svg";
+import LinkedinIcon from "../Assets/Icons/social-linkedin.svg";
+import TwitterIcon from "../Assets/Icons/social-twitter.svg";
+import InstagramIcon from "../Assets/Icons/social-instagram.svg";
+import YoutubeIcon from "../Assets/Icons/social-youtube.svg";
 
 const SocialMedia = [
-  { icon: InstagramIcon, url: "#" },
-  { icon: FacebookIcon, url: "#" },
-  { icon: TwitterIcon, url: "#" },
-  { icon: YouTubeIcon, url: "#" },
+  { icon: FacebookIcon, url: "/construction" },
+  { icon: LinkedinIcon, url: "/construction" },
+  { icon: TwitterIcon, url: "/construction" },
+  { icon: InstagramIcon, url: "/construction" },
+  { icon: YoutubeIcon, url: "/construction" },
 ];
 
 export default SocialMedia;

@@ -12,6 +12,7 @@ import Signin from "./Pages/Sigin-in/index";
 import Signup from "./Pages/Sign-up/index";
 import Donate from "./Pages/Donate/index";
 import RootLayout from "./Pages/Root";
+import Other from "./Pages/Other/index";
 
 // import Navbar from "./Components/Navbar/Navbar";
 
@@ -28,6 +29,7 @@ function App() {
         { path: "/sign-in", element: <Signin /> },
         { path: "/sign-up", element: <Signup /> },
         { path: "/donate", element: <Donate /> },
+        { path: "*", element: <Other /> },
       ],
     },
   ]);
