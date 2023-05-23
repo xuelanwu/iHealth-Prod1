@@ -30,7 +30,7 @@ function NfTeamInfo()
                     <ol className='nfteam-info-list-wrapper'>
                       <li>{arg.cardText1}</li>
                       <li>{arg.cardText2}</li>
-                      <li>{arg.cardText1}</li>
+                      <li>{arg.cardText3}</li>
                     </ol>
                   </div>
                   <a href={arg.DetailsLink}>Learn More &gt;</a>  
