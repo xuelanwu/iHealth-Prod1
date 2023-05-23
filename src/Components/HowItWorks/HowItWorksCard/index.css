@@ -9,26 +9,23 @@
   transition-delay: 0s;
   transition-delay: 0.2s;
 }
-
-.how-it-works-nested-block {
-  position: relative;
-  left: 8rem;
-  top: 1.5rem;
+.how-it-works-nested-block{
+ position: relative;
+ left: 8rem;
+ top:1.5rem;
 }
-
-.how-it-works-button.even {
+.how-it-works-button.even{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 13rem;
-  height: 8rem;
+  height:8rem;
   background: #07235B;
   border-radius: 3px;
   border: 1px solid #E3E6EE;
   color: #FFFFFF;
 }
-
-.how-it-works-button.odd {
+.how-it-works-button.odd{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +36,6 @@
   border: 1px solid #E3E6EE;
   color: #2947A9;
 }
-
 .how-it-works-card.visible {
   opacity: 1;
   transform: translateX(0);
@@ -66,7 +62,7 @@
   color: rgba(14, 35, 91, 0.06);
   margin: 0;
   position: absolute;
-
+     
 }
 
 /* .how-it-works-text-block {
@@ -76,28 +72,27 @@
 } */
 
 .how-it-works-button-label {
-
+  
   width: 70%;
   font-weight: 600;
   font-size: 17px;
   line-height: 120%;
   text-align: center;
   /* color: #062758; */
-
+  
 }
 
 .how-it-works-content {
-
+  
   width: 80%;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
   color: #062758;
 }
-
-/* opacity: 0;
+  /* opacity: 0;
   transition: opacity 1s ease-in-out; */
-
+}
 
 /* .how-it-works-content.visible {
   opacity: 1;

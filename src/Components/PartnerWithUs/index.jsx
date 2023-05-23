@@ -41,20 +41,18 @@ const PartnerWithUs = () => {
 
   return (
     <div className="partner-with-us-container">
-      <h2 className="header-partner">
-        Discover Our Innovative Solutions for Medical and Wellness Practices,
-        Providers, and Health Systems
-      </h2>
       <div className="partner-with-us-inner" ref={slideInLeftRef}>
         <div
           className={`partner-with-us-inner-text-left ${
             slideInLeft ? "slide-in" : ""
           }`}
         >
+          <h2>
+            Discover Our Innovative Solutions for Medical and Wellness
+            Practices, Providers, and Health Systems
+          </h2>
           <p className="partner-with-us-text-blue">
-            A provider Interested in Reaching New Patients?
-            <br />
-            <span className="span-blue">Revolutionize Your Patient Care </span>
+            Revolutionize Your Patient Care
           </p>
           <div className="partner-with-us-text-with-checkmark-box">
             <p className="partner-with-us-text-with-checkmark">
@@ -85,10 +83,7 @@ const PartnerWithUs = () => {
       <div className="partner-with-us-inner" ref={slideInRightRef}>
         <div className="partner-with-us-inner-img">
           <div className="partner-with-us-img-stack">
-            <img
-              className="electronic"
-              src={partnerElectronicHealthRecordImg}
-            ></img>
+            <img src={partnerElectronicHealthRecordImg}></img>
             <img src={partnerXRayImg}></img>
           </div>
           <img
@@ -102,7 +97,9 @@ const PartnerWithUs = () => {
           }`}
         >
           <h2>We work with Health Systems</h2>
-          <span className="span-blue">Partner with Us</span>
+          <p className="partner-with-us-text-blue">
+            Revolutionize Your Patient Care
+          </p>
           <p className="partner-with-us-text-darkblue">
             If you are interested in partnering with us, please contact us to
             discuss potential collaboration opportunities. We look forward to

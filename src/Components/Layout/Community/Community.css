@@ -34,3 +34,20 @@
   letter-spacing: -0.01em;
   padding: 20px;
 }
+@media (width<1000px)and (width>=650px){
+.community-text h2{ 
+  font-size: 36px;
+}
+.community-text span {
+  font-size: 24px;
+}
+}
+
+@media (width <= 650px) {
+  .community-text h2{
+  font-size: 30px;
+}
+.community-text span {
+  font-size: 20px;
+}
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../../Assets/Brand/ihealth logo final.png";
+import logo from "../../../Assets/Brand/ihealth logo final_copy.png";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import "./Navbar.css";
 

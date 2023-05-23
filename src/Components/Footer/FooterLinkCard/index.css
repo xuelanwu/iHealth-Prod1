@@ -8,6 +8,10 @@
   gap: 1rem;
 }
 
+.footer-link-links-block {
+  gap: 0.8rem;
+}
+
 .footer-link-title {
   font-size: 1rem;
   font-weight: 600;
@@ -15,7 +19,16 @@
 
 .footer-links {
   text-decoration: none;
-  line-height: 1.5;
   color: #07235b;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-link-card {
+    gap: 0.2rem;
+  }
+
+  .footer-links {
+    font-size: 0.8rem;
+  }
 }
