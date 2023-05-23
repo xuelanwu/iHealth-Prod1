@@ -10,6 +10,6 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: 'Work Sans', sans-serif;
 }
