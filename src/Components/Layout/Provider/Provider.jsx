@@ -23,9 +23,9 @@ const Provider = ({ selected, setSelected }) => {
       icon: <ExpandMoreIcon sx={{ fontSize: 16, width: 20 }} />,
     },
     {
-      title: "Insurance",
-      text: "Select Insurance",
-      icon: <ExpandMoreIcon sx={{ fontSize: 16, width: 20 }} />,
+      title: "Zip Code",
+      text: "Select Zip Code",
+      icon: <ExpandMoreIcon sx={{ fontSize: 16, width: 6 }} />,
     },
    
   ];
@@ -74,13 +74,15 @@ const Provider = ({ selected, setSelected }) => {
         
           </>
         ))}
-         <div className="zip-code">
+      
+         {/*<div className="zip-code">
           <div className="small">
           <small>Zip code</small>
           </div>
           
           <input type="text" placeholder="Enter zipcode" />
         </div>
+        */}
        
         <div className="search-donate">
           <div className="search-container">
