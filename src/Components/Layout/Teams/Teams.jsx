@@ -20,7 +20,7 @@ const Teams = () => {
   return (
     <div className="teams-outline">
       <div className="teams-container">
-// <button onClick={() => {settype("NF TEAM");}} className={type == "NF TEAM" ? "teams-group-active" : "teams-group"} >NF TEAM</button>
+
 
 
       <button onClick={(e)=>{settype('NF TEAM'),document.querySelector('#NfIHub-container').scrollIntoView({ behavior: "smooth"}); }} className={type == 'NF TEAM' ? 'teams-group-active' : 'teams-group'}>NF TEAM</button>
