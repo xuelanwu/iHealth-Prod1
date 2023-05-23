@@ -4,15 +4,15 @@ const FooterLink = [
     links: [
       {
         title: "Our Mission",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Board of Direction",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Advisory Council",
-        path: "/construction",
+        path: "#",
       },
     ],
   },
@@ -21,15 +21,15 @@ const FooterLink = [
     links: [
       {
         title: "Ways to Give",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Fundraise",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Volunteer",
-        path: "/construction",
+        path: "#",
       },
     ],
   },
@@ -38,15 +38,15 @@ const FooterLink = [
     links: [
       {
         title: "Provider Lookup",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Community Portal",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Partner with Us",
-        path: "/construction",
+        path: "#",
       },
     ],
   },
@@ -55,15 +55,15 @@ const FooterLink = [
     links: [
       {
         title: "Private Policy",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Terms of Service",
-        path: "/construction",
+        path: "#",
       },
       {
         title: "Disclaimer",
-        path: "/construction",
+        path: "#",
       },
     ],
   },
