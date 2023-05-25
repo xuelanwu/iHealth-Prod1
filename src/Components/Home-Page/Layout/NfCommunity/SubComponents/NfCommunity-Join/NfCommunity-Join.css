@@ -110,6 +110,8 @@
     transition: 0.2s;
     font-size: 0.9dvw;
     text-decoration: none;
+    user-select: none;
+
 }
 
 #nfcommunity-join-button-container > *:nth-child(3):hover
@@ -117,6 +119,7 @@
     background:#ffffff;
     color: #07235B;
     box-shadow: 0 0 0 1px #ffffff,inset 0 0 0 2px #07235B;
+
 }
 
 

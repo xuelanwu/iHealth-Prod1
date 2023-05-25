@@ -25,7 +25,9 @@ function NfCommunityJoin()
             <div id='nfcommunity-join-button-container'>
               <p>Join NF Community</p>
               <p>Connect with other people, Share your story Join<br/> the discussion today</p>
-              <a href='#NfIHub-container'>Join</a>
+              
+              {/* when user click under construction pop-up will be displayed */}
+              <a onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}}>Join</a>
             </div>
           </div>
 
