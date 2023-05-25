@@ -19,7 +19,7 @@
 /* Set Css rules for main div of all under construction elements */
 #UnderConst-main
 {
-    width: 30vw;
+    width: 70vw;
     height: 80%;
     display: flex;
     place-items: center;
@@ -220,4 +220,85 @@
     top: 136px;
     border-top-right-radius: 36%;
     border-top-left-radius: 36%;
+}
+
+
+
+
+
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 750px) 
+{
+    /* Set Css rules for main div of all under construction elements */
+    #UnderConst-main
+    {
+        width: 70vw;
+        height: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) 
+{
+
+
+    /* Set Css rules for main div of all under construction elements */
+    #UnderConst-main
+    {
+        width: 60vw;
+        height: 35%;
+    }
+
+    /* Set Css rules for circle div covers all sub elements */
+    #UnderConst-circle
+    {
+        height: 200px;
+        width: 200px;
+    }
+
+    /* Set Css rules for the circle div to give the fading effect of circle */
+    #UnderConst-innerCircle
+    {
+        
+        height: 90px;
+        width: 160px;
+    }
+
+
+
+    /* Set Css rules for Under Construction text */
+    #UnderConst-circle > p:nth-child(2)
+    {
+        font-size: 3.5dvw;
+        line-height: 13px;
+    }
+
+    /* Set Css rules for Exciting Updates Coming... text */
+    #UnderConst-circle > p:nth-child(3)
+    {
+        font-size: 2.3dvw;
+        line-height: 14px;
+    }
+
+
+    /* Set Css rules for loading bar */
+    #UnderConst-bar
+    {
+        width:110px;
+        height:5px;
+    }
+
+    /* Set Css rules for the Close Button */
+    #UnderConst-circle > button
+    {
+        
+        bottom:10px;
+        background: #0D99FF;
+        border-radius: 10px;
+        height:35px;
+        width:80px;
+    }
 }
