@@ -19,7 +19,7 @@
 /* Set Css rules for main div of all under construction elements */
 #UnderConst-main
 {
-    width: 70vw;
+    width: 40vw;
     height: 80%;
     display: flex;
     place-items: center;

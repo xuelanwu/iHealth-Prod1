@@ -18,17 +18,17 @@ const Navbar = () => {
           <NavLink to="/" className="home">
             <li>Home</li>
           </NavLink>
-          <NavLink to="/services" className="services">
+          <NavLink onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className="services">
             <li>Services</li>
           </NavLink>
-          <NavLink to="/about-us" className="about-us">
+          <NavLink onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className="about-us">
             <li>About Us</li>
           </NavLink>
-          <NavLink to="/research" className="research">
+          <NavLink onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className="research">
             <li>Research</li>
           </NavLink>
 
-          <NavLink to="/sign-in" className="signin">
+          <NavLink onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className="signin">
             <li>Sign up or Log In</li>
             <AccountCircleOutlinedIcon
               className="circle-icon"
@@ -37,7 +37,7 @@ const Navbar = () => {
             />
           </NavLink>
 
-          <NavLink to="/donate" className="donate">
+          <NavLink onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className="donate">
             <li>Donate</li>
           </NavLink>
         </ul>
