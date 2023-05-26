@@ -33,7 +33,7 @@ function NfTeamInfo()
                       <li>{arg.cardText3}</li>
                     </ol>
                   </div>
-                  <a href={arg.DetailsLink}>Learn More &gt;</a>  
+                  <a onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}}>Learn More &gt;</a>  
                 </div>
               )
           })
