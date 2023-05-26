@@ -108,15 +108,7 @@
 
 /* -------------------- Responsive Css Rules -------------------- */
 
-@media only screen and (max-width: 435px) 
-{
-    #nfteam-select-user-select-group
-    {
-        flex-wrap: wrap;
-    }
 
-    
-}
 
 @media only screen and (max-width: 750px)
 {
@@ -153,3 +145,28 @@
 
 
 } 
+
+
+
+@media only screen and (max-width: 450px)
+{
+    #nfteam-select-user-select-group 
+    {
+        max-width: 80vw;
+    }
+
+    .nfteam-select-user-select-group-BUTTON 
+    {
+        font-size: 2.6vw;
+        padding: 0px 10px;
+        width: fit-content;
+    }
+
+    .right-arrow::after 
+    {
+        border-width: 15px 0 15px 15px;
+        right: -12px
+    
+    }
+
+}

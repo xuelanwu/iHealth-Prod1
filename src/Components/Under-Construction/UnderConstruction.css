@@ -230,6 +230,29 @@
 
 /* -------------------- Responsive Css Rules -------------------- */
 
+@media only screen and (max-width: 1400px) 
+{
+     /* Set Css rules for main div of all under construction elements */
+     #UnderConst-main
+     {
+         width: 55vw;
+         height: 60%;
+     }
+
+}
+
+
+@media only screen and (max-width: 850px) 
+{
+     /* Set Css rules for main div of all under construction elements */
+     #UnderConst-main
+     {
+         width: 80vw;
+         height: 60%;
+     }
+
+}
+
 @media only screen and (max-width: 750px) 
 {
     /* Set Css rules for main div of all under construction elements */
@@ -263,7 +286,7 @@
     #UnderConst-innerCircle
     {
         
-        height: 90px;
+        height: 45px;
         width: 160px;
     }
 
@@ -301,4 +324,16 @@
         height:35px;
         width:80px;
     }
+}
+
+
+@media only screen and (max-width: 420px) 
+{
+     /* Set Css rules for main div of all under construction elements */
+     #UnderConst-main
+     {
+         width: 90vw;
+         height: 35%;
+     }
+
 }
