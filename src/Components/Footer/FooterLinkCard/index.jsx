@@ -9,7 +9,7 @@ const FooterLinkCard = ({ linkCard }) => {
       </div>
       <div className="footer-link-links-block">
         {links.map((link) => (
-          <a className="footer-links" href={link.path}>
+          <a className="footer-links" onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} href={link.path}>
             {link.title}
           </a>
         ))}
