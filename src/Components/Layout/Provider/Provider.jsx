@@ -24,18 +24,18 @@ const Provider = ({ selected, setSelected }) => {
   //   },
   // ];
   //set providers
-  const [state, setState] = useState([]);
+  const [city, setCity] = useState([]);
   const [type, setType] = useState([]);
   // fetch data from server(api)
   useEffect(() => {
     const getSpecialty = async () => {
       const res = await axios.get(`${getProviders}`);
-      setState(res.data.fields.state);
+      setCity(res.data.fields.city);
       setType(res.data.fields.specialty);
     };
     getSpecialty();
   });
-  console.log(state);
+  // console.log(state);
   return (
     <div className="frame-container">
       <div className="input-wrapper">
@@ -87,7 +87,7 @@ const Provider = ({ selected, setSelected }) => {
             <option selected disabled>
               City
             </option>
-            {state.map((items) => (
+            {city.map((items) => (
               <option>{items}</option>
             ))}
           </select>
