@@ -4,18 +4,19 @@
   width: 95%;
   border-radius: 10px;
   height: 150px;
-  top: 49rem;
+  top: 55rem;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(255, 255, 255, 0.7);
 }
+
 .input-wrapper {
   display: flex;
   place-items: center;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   height: 100%;
   width: 98%;
   gap: 1rem;
@@ -38,7 +39,8 @@
   border: none;
   border-radius: 5px;
 }
-.search-btn:hover{
+
+.search-btn:hover {
   cursor: pointer;
 }
 
@@ -49,6 +51,7 @@
   text-align: center;
   border-radius: 5px;
 }
+
 .donate-now {
   text-decoration: none;
   color: white;
@@ -56,19 +59,36 @@
   font-size: 15px;
   font-weight: 600;
 }
-.data-text {
-  top:20%;
-  margin-left:-5px;
+
+.specialty {
+  top: 20%;
+  margin-left: -32%;
   position: absolute;
   font-size: 14px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.65);
+  color: #07235b;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "Work Sans";
 }
-.data-title{
+
+.city-header {
+  top: 20%;
+  margin-left: 15%;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  color: #07235b;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "Work Sans";
+}
+
+.data-title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #B3B3B3; 
+  color: #B3B3B3;
 }
 
 .search-donate {
@@ -76,96 +96,150 @@
   flex-direction: row;
   gap: 20px;
 }
-.dropdown-content{
+
+.dropdown-content {
   position: absolute;
   display: grid;
   background-color: #0D99FF;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: 400;
   color: white;
-  max-width:fit-content;
+  max-width: fit-content;
   border-radius: 5px;
   top: 90%;
   padding: 2px;
   margin-left: -15px;
 }
-.dropdown-item{
+
+.dropdown-item {
   font-size: 15px;
   padding: 7px 2px;
   cursor: pointer;
   transition: all 0.2s;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
   background: #062758;
   border-radius: 3px;
 }
 
 
-.dropdown-text{
+.dropdown-text {
   cursor: pointer;
   color: #B3B3B3;
 
 }
-.dropdown{
+
+.dropdown {
   position: relative;
   padding: 10px 14px;
   user-select: none;
   border: 1px solid #b3b3b3;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px; 
-  margin-top: 20px;
+  border-radius: 8px;
+  margin-top: 50px;
 
-  
+
 }
-.disease{
+
+.disease {
   padding: 10px 14px;
   user-select: none;
   border: 1px solid #b3b3b3;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
-.zip-code input{
+.zip-code input {
   padding: 10px 14px;
   border: 1px solid #b3b3b3;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px; 
+  border-radius: 8px;
   width: 120px;
 }
+
 .text-disease {
   margin-bottom: 18px;
 }
-.text-disease small{
-  position: absolute;
- top: 20%;
- margin: 0px 10px;
- font-size: 14px;
- font-weight: 500;
- color: rgba(0, 0, 0, 0.65);
- 
-}
 
-.small{
+/* .text-disease small {
+  position: absolute;
+  top: 20%;
+  margin: 0px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
+
+} */
+
+.small {
   position: absolute;
   top: 25%;
   line-height: 10px;
   margin: 0px 10px;
   font-size: 16px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.65);
+  color: #07235B;
+  font-weight: bold;
 }
 
+.disease-header {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  position: absolute;
+  top: 25%;
+  line-height: 10px;
+  margin: 0px 10px;
+  color: #07235B;
+  font-weight: bold;
+}
+
+.type {
+  width: 20%;
+  padding: 10px 14px;
+  user-select: none;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #B3B3B3
+}
+
+.city {
+  width: 15%;
+  padding: 10px 14px;
+  user-select: none;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #B3B3B3
+}
+
+.patient-field {
+  margin-top: 2%;
+}
+
+.patient-status {
+  color: #B3B3B3;
+  font-size: 14px;
+  margin-left: 3px;
+}
 
 
 
 
 /* MEDIA QUERIES */
 
-@media (width >= 1440px) {
-  .frame-container{
+@media (width >=1440px) {
+  .frame-container {
     width: 80%;
   }
-  .input-wrapper{
+
+  .input-wrapper {
     display: flex;
     flex-grow: 5;
     justify-content: space-evenly;
@@ -173,29 +247,35 @@
     padding: 10px;
     gap: 0;
   }
-  .data-title{
+
+  .data-title {
     font-size: 16px;
     width: fit-content;
   }
-  .dropdown-text{
+
+  .dropdown-text {
     font-size: 16px;
   }
+
   .frame-donate {
     width: 9rem;
     border-radius: 6px;
   }
+
   .search-btn {
-  width: 8rem;
-  border-radius: 5px;
+    width: 8rem;
+    border-radius: 5px;
   }
 
 }
-@media (width <= 1439px){
 
-  .frame-container{
+@media (width <=1439px) {
+
+  .frame-container {
     width: 90%;
   }
-  .input-wrapper{
+
+  .input-wrapper {
     width: 100%;
     justify-content: space-around;
     padding: 10px;
@@ -203,55 +283,67 @@
   }
 
 }
-@media (width <= 1250px){
-  .frame-container{
+
+@media (width <=1250px) {
+  .frame-container {
     width: 95%;
   }
-  .input-wrapper{
+
+  .input-wrapper {
     gap: 0rem;
   }
-  .data-title{
+
+  .data-title {
     font-size: 13px;
   }
-  .dropdown-text{
+
+  .dropdown-text {
     font-size: 13px;
   }
+
   .frame-donate {
     width: 5rem;
     border-radius: 4px;
   }
+
   .search-btn {
-  width: 5rem;
-  border-radius: 4px;
+    width: 5rem;
+    border-radius: 4px;
   }
 }
+
 @media (width < 1181px) {
-  .frame-container{
+  .frame-container {
     width: 98%;
   }
 }
 
 @media (width > 2060px) {
-  .frame-container{
+  .frame-container {
     width: 70%;
     height: 13%;
   }
-  .input-wrapper{
+
+  .input-wrapper {
     justify-content: space-between;
     width: 90%;
   }
-  .data-title{
+
+  .data-title {
     font-size: 20px;
   }
-  .dropdown-text{
+
+  .dropdown-text {
     font-size: 20px;
   }
+
   .frame-donate {
     width: 10rem;
     border-radius: 4px;
   }
+
   .search-btn {
-  width: 8rem;
-  border-radius: 4px;
+    width: 8rem;
+    border-radius: 4px;
   }
 }
