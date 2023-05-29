@@ -8,23 +8,28 @@
 }
 
 .home-page-our-services-icon {
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 48px;
   padding: 5px;
-  background: #C33418;
+  background: #c33418;
   border-radius: 50%;
 }
 
 .home-page-our-services-hover {
-  border: 1.4px solid #E0E3EB;
+  border: 1px solid #e0e3eb;
+  border-radius: 1rem;
   flex-grow: 1;
-  gap: 1.5rem;
+  gap: 1rem;
   padding: 1rem;
   color: #062758;
   display: grid;
-  grid-template-rows: 1fr 2fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+}
+
+.home-page-our-services-title {
+  font-size: 1rem;
 }
 
 .home-page-our-services-content {
@@ -39,4 +44,26 @@
 
 .home-page-our-services-hover:hover .home-page-our-services-content {
   color: #fff;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-page-our-services-card {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .home-page-our-services-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-page-our-services-hover {
+    gap: 1rem;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    border-radius: 1rem;
+  }
+
+  .home-page-our-services-title {
+    font-size: 1rem;
+  }
 }

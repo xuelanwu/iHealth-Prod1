@@ -2,8 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 
 import PartnerWithUsButton from "src/Components/PartnerWithUs/PartnerWithUsButton";
 
+import PartnerWithUsTitle from "src/Constants/PartnerWithUsTitle.js";
+
 import partnerBabyImg from "../../Assets/Images/partner-baby.jpg";
-import partnerXRayImg from "../../Assets/Images/partner-x-ray.jpg";
+import partnerXRayImg from "../../Assets/Images/partner-x-ray.png";
 import partnerHeartImg from "../../Assets/Images/partner-heart.jpg";
 import partnerMassageImg from "../../Assets/Images/partner-massage.jpg";
 import partnerElectronicHealthRecordImg from "../../Assets/Images/partner-electronic-health-record.jpg";
@@ -26,11 +28,13 @@ const PartnerWithUs = () => {
         const rectRight = slideInRightDiv.getBoundingClientRect();
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight;
-        if (rectLeft.top >= 0 && rectLeft.bottom <= windowHeight) {
+        if (rectLeft.top >= 0 && rectLeft.top <= windowHeight) {
           setSlideInLeft(true);
+          console.log("left in-view");
         } else setSlideInLeft(false);
-        if (rectRight.top >= 0 && rectRight.bottom <= windowHeight) {
+        if (rectRight.top >= 0 && rectRight.top <= windowHeight) {
           setSlideInRight(true);
+          console.log("right in-view");
         } else setSlideInRight(false);
       }
     };
@@ -41,31 +45,46 @@ const PartnerWithUs = () => {
 
   return (
     <div className="partner-with-us-container">
+      <div className="partner-with-us-title-block">
+        <h2>
+          Discover Our Innovative Solutions for Medical and Wellness Practices,
+          Providers, and Health Systems
+        </h2>
+      </div>
       <div className="partner-with-us-inner" ref={slideInLeftRef}>
         <div
           className={`partner-with-us-inner-text-left ${
             slideInLeft ? "slide-in" : ""
           }`}
         >
-          <h2>
-            Discover Our Innovative Solutions for Medical and Wellness
-            Practices, Providers, and Health Systems
-          </h2>
-          <p className="partner-with-us-text-blue">
-            Revolutionize Your Patient Care
-          </p>
-          <div className="partner-with-us-text-with-checkmark-box">
-            <p className="partner-with-us-text-with-checkmark">
-              &#10004; Reach patients in your area looking for a new health
-              provider
-            </p>
-            <p className="partner-with-us-text-with-checkmark">
-              &#10004; Strengthen your online reputation with verified reviews
-            </p>
-            <p className="partner-with-us-text-with-checkmark">
-              &#10004; Fill last-minute openings in your schedule.
+          <div className="partner-with-us-inner-title-block">
+            <h2 className="partner-with-us-inner-title">
+              {PartnerWithUsTitle[0].title}
+            </h2>
+            <p className="partner-with-us-inner-subtitle">
+              {PartnerWithUsTitle[0].subtitle}
             </p>
           </div>
+          <ul className="partner-with-us-list">
+            <li className="partner-with-us-list-item">
+              <p>&#10004;</p>
+              <p className="partner-with-us-text">
+                Reach patients in your area looking for a new health provider
+              </p>
+            </li>
+            <li className="partner-with-us-list-item">
+              <p>&#10004;</p>
+              <p className="partner-with-us-text">
+                Strengthen your online reputation with verified reviews
+              </p>
+            </li>
+            <li className="partner-with-us-list-item">
+              <p>&#10004;</p>
+              <p className="partner-with-us-text">
+                Fill last-minute openings in your schedule.
+              </p>
+            </li>
+          </ul>
           <PartnerWithUsButton />
         </div>
         <div className="partner-with-us-inner-img">
@@ -80,7 +99,7 @@ const PartnerWithUs = () => {
         </div>
       </div>
 
-      <div className="partner-with-us-inner" ref={slideInRightRef}>
+      <div className="partner-with-us-inner bottom" ref={slideInRightRef}>
         <div className="partner-with-us-inner-img">
           <div className="partner-with-us-img-stack">
             <img src={partnerElectronicHealthRecordImg}></img>
@@ -96,17 +115,22 @@ const PartnerWithUs = () => {
             slideInRight ? "slide-in" : ""
           }`}
         >
-          <h2>We work with Health Systems</h2>
-          <p className="partner-with-us-text-blue">
-            Revolutionize Your Patient Care
-          </p>
-          <p className="partner-with-us-text-darkblue">
+          <div className="partner-with-us-inner-title-block">
+            <h2 className="partner-with-us-inner-title">
+              {PartnerWithUsTitle[1].title}
+            </h2>
+            <p className="partner-with-us-inner-subtitle">
+              {PartnerWithUsTitle[1].subtitle}
+            </p>
+          </div>
+
+          <p className="partner-with-us-text">
             If you are interested in partnering with us, please contact us to
             discuss potential collaboration opportunities. We look forward to
             hearing from you soon.
           </p>
 
-          <p className="partner-with-us-text-darkblue">
+          <p className="partner-with-us-text">
             We are committed to working with health systems in a collaborative
             and transparent manner to achieve our shared goals. We believe that
             by working together, we can create a healthcare system that is more
