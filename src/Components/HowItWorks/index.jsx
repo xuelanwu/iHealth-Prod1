@@ -47,6 +47,13 @@ const HowItWorks = () => {
             isVisible={isVisible}
           />
         ))}
+        <div className="how-it-works-learn-more-container">
+          <div className="how-it-works-learn-more-box how-it-works-button even">
+            <a className="how-it-works-learn-more" href="#">
+              Learn More &gt;
+            </a>
+          </div>
+        </div>
       </div>
       <div className="how-it-works-benefit-container">
         {Benefit.map((benefit) => {

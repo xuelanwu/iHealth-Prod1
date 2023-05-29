@@ -7,30 +7,30 @@ import step5Image from "../Assets/Icons/step-5-highly-coordinated-health-and-wel
 const HowItWorksSteps = [
   {
     image: step1Image,
-    title: "1-Health and Wellness Provider Lookup",
+    title: "Health and Wellness Provider Lookup",
     content:
       "Enter your search criteria, browse results, contact the provider.",
   },
   {
     image: step2Image,
-    title: "2-Sign up for free today",
+    title: "Sign up for free today",
     content: "In just 2-3 minutes, sign up/ opt-in for membership",
   },
   {
     image: step3Image,
-    title: "3-AI for the Appointments",
+    title: "AI for the Appointments",
     content:
       "By using APIs to “sync” calendars across various platforms, patients see available appointment slots and can book appointments in real time.",
   },
   {
     image: step4Image,
-    title: "4-Electronic Health Records (EHR) integration ",
+    title: "Electronic Health Records (EHR) integration ",
     content:
       "Provide patients with easy access to their health information, while also enabling healthcare providers to have a more complete view of a patient's health history.",
   },
   {
     image: step5Image,
-    title: "5-Making New Friends",
+    title: "Making New Friends",
     content:
       "The community portal will help patients network with others living with the same condition to support, learn, inspire, feel a sense of fellowship, safety and belonging",
   },
