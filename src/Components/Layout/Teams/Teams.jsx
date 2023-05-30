@@ -17,22 +17,23 @@ const Teams = () => {
       text: " (Coming soon)",
     },
   ];
+
+
   return (
     <div className="teams-outline">
       <div className="teams-container">
 
-
-
-      <button onClick={(e)=>{settype('NF TEAM'),document.querySelector('#NfIHub-container').scrollIntoView({ behavior: "smooth"}); }} className={type == 'NF TEAM' ? 'teams-group-active' : 'teams-group'}>NF TEAM</button>
-    
-      <button onClick={() => {settype("Geriatric Disease Team");}} className={type == "Geriatric Disease Team" ? "teams-group-active" : "teams-group"} >
+        <button onClick={(e)=>{settype('NF TEAM'),document.querySelector('#NfIHub-container').scrollIntoView({ behavior: "smooth"}); }} className={type == 'NF TEAM' ? 'teams-group-active' : 'teams-group'}>
+          NF TEAM
+        </button>
+      
+        <button onClick={() => {settype("Geriatric Disease Team");document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className={type == "Geriatric Disease Team" ? "teams-group-active" : "teams-group"} >
           Geriatric Disease Team <p>(Coming soon)</p>
         </button>
 
-        <button onClick={() => {settype("Cancer Team");}} className={type == "Cancer Team" ? "teams-group-active" : "teams-group"}>
+        <button onClick={() => {settype("Cancer Team");document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className={type == "Cancer Team" ? "teams-group-active" : "teams-group"}>
           Cancer Team <p>(Coming soon)</p>
         </button>
-
 
       </div>
     </div>
