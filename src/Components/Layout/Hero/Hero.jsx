@@ -1,19 +1,27 @@
-import React, { useState } from "react";
+//Import Libraries/Packages
+import React, { useState } from 'react'
+
+
+//Import Styles
+import "./Hero.css";
+
+
+//import local assets/files/components
 import Provider from "../Provider/Provider";
 import Community from "../Community/Community";
-import "./Hero.css";
-import image from "../../../Assets/Images/0ed01787-00bc-4b3f-b598-ef3ca2ee698c 2.png";
+import imageforHero from "../../../Assets/Images/hero-main-pic.png";
 
 
 
-const Hero = () => {
+const Hero = () => 
+{
   const [selected, setSelected] = useState("Select Disease");
 
   return (
     <>
       <div className="hero-wrapper">
         <div className="hero-image-container">
-          <img src={image} alt="" />
+          <img src={imageforHero} alt="Doctor with patients image for Hero section" />
         </div>
         <div className="hero-text-container">
           <h5 className="comitted">-Committed to success</h5>

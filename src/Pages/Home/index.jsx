@@ -8,7 +8,7 @@ import HowItWorks from "../../Components/HowItWorks";
 import PartnerWithUs from "../../Components/PartnerWithUs";
 import NFInformation from "src/Components/Home-Page/Layout/NfInformation/NFInformation";
 import NFCommunity from "src/Components/Home-Page/Layout/NfCommunity/NFCommunity";
-import UnderConstruction from "src/Components/Under-Constructure/UnderConstruction";
+import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 
 const index = () => {
   return (
