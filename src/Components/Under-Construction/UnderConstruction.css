@@ -117,6 +117,7 @@
     color:white;
     z-index:2;
     margin:0;
+    user-select: none;
 }
 
 /* Set Css rules for Under Construction text */
@@ -197,6 +198,8 @@
     color:white;
     cursor:pointer;
     transition: 0.4s;
+    user-select: none;
+
 }
 
 #UnderConst-circle > button:hover
