@@ -1,5 +1,5 @@
 import React from "react";
-import Teams from "../Teams/Teams";
+import Teams from "./SubComponents/Teams/Teams";
 import "./Community.css";
 
 const Community = () => {

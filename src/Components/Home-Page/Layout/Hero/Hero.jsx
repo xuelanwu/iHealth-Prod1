@@ -7,9 +7,9 @@ import "./Hero.css";
 
 
 //import local assets/files/components
-import Provider from "../Provider/Provider";
-import Community from "../Community/Community";
-import imageforHero from "../../../Assets/Images/hero-main-pic.png";
+import Provider from "./SubComponents/Provider/Provider";
+import Community from "./SubComponents/Community/Community";
+import imageforHero from "../../../../Assets/Images/hero-main-pic.png";
 
 
 

@@ -2,7 +2,7 @@
 import React from "react";
 
 //Import Components
-import Hero from "src/Components/Layout/Hero/Hero";
+import Hero from "../../Components/Home-Page/Layout/Hero/Hero"
 import OurServices from "../../Components/OurServices";
 import HowItWorks from "../../Components/HowItWorks";
 import PartnerWithUs from "../../Components/PartnerWithUs";

@@ -5,6 +5,7 @@
     display: grid;
     grid-template-rows: repeat(4,auto);
     margin: 6rem 10%;
+    overflow-x: hidden;
 }
 
 
