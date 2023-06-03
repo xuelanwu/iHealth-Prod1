@@ -11,7 +11,7 @@
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 1.9vw;
     line-height: 42px;
 }
 
@@ -39,7 +39,7 @@
     line-height: 110%;
     text-align: center;
     letter-spacing: -0.045em;
-    font-size: x-large;
+    font-size: 1.4vw;
     color: #000000;
     position: relative;
     cursor: pointer;
@@ -73,7 +73,7 @@
     line-height: 110%;
     text-align: center;
     letter-spacing: -0.045em;
-    font-size: x-large;
+    font-size: 1.4vw;
     position: relative;
     cursor: pointer;
     white-space: nowrap;

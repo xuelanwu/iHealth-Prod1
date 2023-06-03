@@ -97,50 +97,7 @@
   gap: 20px;
 }
 
-.dropdown-content {
-  position: absolute;
-  display: grid;
-  background-color: #0D99FF;
-  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-  font-weight: 400;
-  color: white;
-  max-width: fit-content;
-  border-radius: 5px;
-  top: 90%;
-  padding: 2px;
-  margin-left: -15px;
-}
 
-.dropdown-item {
-  font-size: 15px;
-  padding: 7px 2px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.dropdown-item:hover {
-  background: #062758;
-  border-radius: 3px;
-}
-
-
-.dropdown-text {
-  cursor: pointer;
-  color: #B3B3B3;
-
-}
-
-.dropdown {
-  position: relative;
-  padding: 10px 14px;
-  user-select: none;
-  border: 1px solid #b3b3b3;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
-  margin-top: 50px;
-
-
-}
 
 .disease {
   padding: 10px 14px;
@@ -158,19 +115,7 @@
   width: 120px;
 }
 
-.text-disease {
-  margin-bottom: 18px;
-}
 
-/* .text-disease small {
-  position: absolute;
-  top: 20%;
-  margin: 0px 10px;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.65);
-
-} */
 
 .small {
   position: absolute;
@@ -183,19 +128,7 @@
   font-weight: bold;
 }
 
-.disease-header {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  position: absolute;
-  top: 25%;
-  line-height: 10px;
-  margin: 0px 10px;
-  color: #07235B;
-  font-weight: bold;
-}
+
 
 .type {
   width: 20%;
@@ -218,17 +151,6 @@
   cursor: pointer;
   color: #B3B3B3
 }
-
-.patient-field {
-  margin-top: 2%;
-}
-
-.patient-status {
-  color: #B3B3B3;
-  font-size: 14px;
-  margin-left: 3px;
-}
-
 
 
 

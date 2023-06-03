@@ -1,33 +1,39 @@
+//Import Libraries/Packages
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+
+
+//Import Styles
+import "./Provider.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import "./Provider.css";
-import axios from "axios";
-//api url
-import { getProviders } from "src/config/urls";
 
-const Provider = ({ selected, setSelected }) => {
+
+//Import Constants 
+import { getProviders } from "src/config/urls"; //api url
+
+//Import Local files/components
+import SelectDisease from "./SubComponents/SelectDisease/SelectDisease";
+
+
+
+
+const Provider = ({ selected, setSelected }) => 
+{
   const [isActive, setIsActive] = useState(false);
-
-  const options = ["Neurofibromatosis(NF)", "Select Disease"];
-  // const ProviderData = [
-  //   {
-  //     title: "Speciality",
-  //     text: "Select Speciality",
-  //     icon: <ExpandMoreIcon sx={{ fontSize: 18, width: 20 }} />,
-  //   },
-  //   {
-  //     title: "State",
-  //     text: "Enter State",
-  //     icon: <ExpandMoreIcon sx={{ fontSize: 16, width: 20 }} />,
-  //   },
-  // ];
-  //set providers
   const [city, setCity] = useState([]);
   const [type, setType] = useState([]);
+
+  const options = ["Neurofibromatosis(NF)", "Select Disease"];
+
+
+
+
+
   // fetch data from server(api)
-  useEffect(() => {
+  useEffect(() => 
+  {
     const getSpecialty = async () => {
       const res = await axios.get(`${getProviders}`);
       setCity(res.data.fields.city);
@@ -35,44 +41,23 @@ const Provider = ({ selected, setSelected }) => {
     };
     getSpecialty();
   });
-  // console.log(state);
-  return (
-    <div className="frame-container">
-      <div className="input-wrapper">
-        <div className="text-disease">
-          <small className="disease-header">Disease</small>
-          <div className="dropdown">
-            <span
-              className="dropdown-text"
-              onClick={(e) => setIsActive(!isActive)}
-            >
-              {selected} <ExpandMoreIcon sx={{ fontSize: 16, width: 20 }} />
-            </span>
-            {isActive && (
-              <div className="dropdown-content">
-                {options.map((option) => (
-                  <div
-                    onClick={(e) => {
-                      setSelected(option);
-                      setIsActive(false);
-                    }}
-                    className="dropdown-item"
-                  >
-                    {option}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-          <div className="patient-field">
-            <input type="checkbox" />
-            <label className="patient-status">Accepting new patients</label>
-          </div>
-        </div>
 
-        {/* {ProviderData.map((data) => ( */}
+
+
+
+  
+  return (
+
+
+
+    <div className="frame-container">
+
+      <div className="input-wrapper">
+
+        <SelectDisease selectoptions={options} />
+       
         <>
-          {/* <div className="disease"> */}
+ 
           <span className="specialty">Specialty</span>
           <select className="type">
             <option selected disabled>
@@ -91,9 +76,9 @@ const Provider = ({ selected, setSelected }) => {
               <option>{items}</option>
             ))}
           </select>
-          {/* </div> */}
+
         </>
-        {/* ))} */}
+    
         <div className="search-donate">
           <div className="search-container">
             <button className="search-btn">
@@ -108,6 +93,8 @@ const Provider = ({ selected, setSelected }) => {
             </Link>
           </div>
         </div>
+
+
       </div>
     </div>
   );
