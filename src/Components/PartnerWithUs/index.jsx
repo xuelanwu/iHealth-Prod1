@@ -90,10 +90,11 @@ const PartnerWithUs = () => {
         <div className="partner-with-us-inner-img">
           <img
             className="partner-with-us-inner-img-solo"
-            src={partnerBabyImg}
+            src={partnerFemaleImg}
           ></img>
+
           <div className="partner-with-us-img-stack">
-            <img src={partnerFemaleImg}></img>
+            <img src={partnerBabyImg}></img>
             <img src={partnerMassageImg}></img>
           </div>
         </div>
