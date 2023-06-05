@@ -108,8 +108,8 @@
   padding-left: 1rem;
 }
 
-/* Set Css rules for Learn More link  */
-.nfteam-info-card-wrapper > a {
+/* Set Css rules for Details related to Learn More link  */
+.nfteam-info-card-Details {
   position: absolute;
   left: 19%;
   bottom: 1.4vw;
@@ -123,6 +123,13 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
+/* Set Css rules for the fist Learn More link, The reason why we are using this because there was an undiscovered error in positioning  */
+.nfteam-info-card-Details0
+{
+  left: 23%;
+}
+
 
 /* -------------------- Responsive Css Rules -------------------- */
 
@@ -159,7 +166,7 @@
     margin-top: 5vw;
   }
 
-  .nfteam-info-card-wrapper > a {
+  .nfteam-info-card-Details {
     font-size: 2.3dvw;
     user-select: none;
   }

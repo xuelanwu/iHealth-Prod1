@@ -18,7 +18,11 @@ export const TeamInfo =
         "cardText2":"NF Registry",
         "cardText3":"Find A Provider",
 
-        "DetailsLink": "#"
+        "Details":
+        {
+            "link": "#",
+            "text": "Learn More >"
+        }
 
     },
     {
@@ -34,7 +38,11 @@ export const TeamInfo =
         "cardText2":"Clinical Drug Therapies",
         "cardText3":"Participate in Research",
 
-        "DetailsLink": "#"
+        "Details":
+        {
+            "link": "#",
+            "text": "Learn More >"
+        }
 
     },
     {
@@ -50,7 +58,11 @@ export const TeamInfo =
         "cardText2":"Conferences and Workshops",
         "cardText3":"Workshops",
 
-        "DetailsLink": "#"
+        "Details":
+        {
+            "link": "#",
+            "text": "Learn More >"
+        }
 
     },
 ] 

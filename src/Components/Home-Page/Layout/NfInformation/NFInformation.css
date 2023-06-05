@@ -5,3 +5,15 @@
     margin-bottom: 14rem;
     margin-top: 4rem;
 }
+
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 810px) 
+{
+    #nfinformation-container
+    {
+        overflow-x: visible;
+    }
+}

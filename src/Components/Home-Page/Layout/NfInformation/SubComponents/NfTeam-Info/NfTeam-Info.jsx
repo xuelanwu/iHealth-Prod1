@@ -28,14 +28,12 @@ function NfTeamInfo() {
                   <li>{arg.cardText3}</li>
                 </ol>
               </div>
-              <a
-                onClick={() => {
-                  document.querySelector("#UnderConst-wrapper").style.display =
-                    "flex";
-                }}
-              >
-                Learn More &gt;
-              </a>
+
+              <div className={`nfteam-info-card-Details nfteam-info-card-Details${i}`}>
+                <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display ="flex";}}>
+                {arg.Details.text}
+                </a>
+              </div>
             </div>
           );
         })}
