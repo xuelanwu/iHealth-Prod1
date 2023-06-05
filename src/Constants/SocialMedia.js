@@ -1,8 +1,8 @@
-import FacebookIcon from "../Assets/Icons/social-facebook.svg";
-import LinkedinIcon from "../Assets/Icons/social-linkedin.svg";
-import TwitterIcon from "../Assets/Icons/social-twitter.svg";
-import InstagramIcon from "../Assets/Icons/social-instagram.svg";
-import YoutubeIcon from "../Assets/Icons/social-youtube.svg";
+import FacebookIcon from "../Assets/Icons/social-facebook.png";
+import LinkedinIcon from "../Assets/Icons/social-linkedin.png";
+import TwitterIcon from "../Assets/Icons/social-twitter.png";
+import InstagramIcon from "../Assets/Icons/social-instagram.png";
+import YoutubeIcon from "../Assets/Icons/social-youtube.png";
 
 const SocialMedia = [
   { icon: FacebookIcon, url: "#" },
