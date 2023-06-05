@@ -82,6 +82,11 @@
   width: fit-content;
 }
 
+.footer-social-media-icon img {
+  width: 40px;
+  height: 40px;
+}
+
 .footer-top-right {
   display: flex;
   gap: 1rem;
@@ -118,8 +123,10 @@
     width: 100%;
     padding: 1.5rem 10%;
     flex-direction: column-reverse;
+    align-items: center;
     gap: 1.5rem;
   }
+
   .footer-top-right {
     display: flex;
     flex-direction: column;
@@ -136,7 +143,6 @@
   }
 
   .footer-address span {
-    display: block;
     line-height: 1.5;
   }
 
@@ -148,10 +154,6 @@
   .footer-contact-title,
   .footer-social-media-title {
     font-size: 0.8rem;
-  }
-
-  .footer-contact-subscribe-block {
-    flex-direction: column;
   }
 
   .footer-social-media-icon img {

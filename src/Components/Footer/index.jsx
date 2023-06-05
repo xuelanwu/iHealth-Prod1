@@ -36,7 +36,14 @@ const Footer = () => {
                 className="footer-stay-informed-input"
                 placeholder="Your email here"
               />
-              <a onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}}><button className="footer-stay-informed-btn">subscribe</button></a>
+              <a
+                onClick={() => {
+                  document.querySelector("#UnderConst-wrapper").style.display =
+                    "flex";
+                }}
+              >
+                <button className="footer-stay-informed-btn">subscribe</button>
+              </a>
             </div>
           </div>
           <div className="footer-social-media-block">
@@ -47,7 +54,11 @@ const Footer = () => {
                   <a
                     className="footer-social-media-icon"
                     href={ele.url}
-                    onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}}
+                    onClick={() => {
+                      document.querySelector(
+                        "#UnderConst-wrapper"
+                      ).style.display = "flex";
+                    }}
                     key={`social-icon-${idx}`}
                   >
                     <img src={ele.icon} alt="Social Media Icon" />

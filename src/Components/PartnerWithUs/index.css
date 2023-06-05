@@ -47,10 +47,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
 }
 
 .partner-with-us-inner-img-solo {
-  width: 320px;
+  width: calc(320px - 0.5rem / 2);
   height: 320px;
   object-fit: cover;
 }
@@ -58,11 +60,12 @@
 .partner-with-us-img-stack {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .partner-with-us-img-stack img {
   width: 240px;
-  height: 160px;
+  height: calc(160px - 0.5rem / 2);
 }
 
 .partner-with-us-inner-text-left,
