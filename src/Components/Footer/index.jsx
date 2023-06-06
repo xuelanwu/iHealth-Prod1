@@ -61,7 +61,7 @@ const Footer = () => {
                     }}
                     key={`social-icon-${idx}`}
                   >
-                    <img src={ele.icon} alt="Social Media Icon" />
+                    <img src={ele.icon} loading='lazy' alt="Social Media Icon" />
                   </a>
                 );
               })}

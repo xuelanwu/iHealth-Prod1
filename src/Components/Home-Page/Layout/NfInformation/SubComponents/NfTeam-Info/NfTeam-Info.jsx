@@ -16,7 +16,7 @@ function NfTeamInfo() {
             <div className="nfteam-info-card-wrapper" key={i + arg.image.alt}>
               <div className="nfteam-info-card-TOP">
                 <div>
-                  <img src={arg.image.src} alt={arg.image.alt} />
+                  <img src={arg.image.src} loading='lazy' alt={arg.image.alt} />
                 </div>
                 <p>{arg.imageText}</p>
               </div>

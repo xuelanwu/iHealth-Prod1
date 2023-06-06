@@ -21,7 +21,7 @@ const Hero = () =>
     <>
       <div className="hero-wrapper">
         <div className="hero-image-container">
-          <img src={imageforHero} alt="Doctor with patients image for Hero section" />
+          <img src={imageforHero} loading='lazy' alt="Doctor with patients image for Hero section" />
         </div>
         <div className="hero-text-container">
           <h5 className="comitted">-Committed to success</h5>
