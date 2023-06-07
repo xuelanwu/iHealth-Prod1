@@ -1,0 +1,10 @@
+/* !!!! important Notice : This subcomponent is duplicate of SelectDisease subcomponent All generic design css rules is in the SelectDisease css file.
+    In the future After final design and functionanlity decided wheather only 1 component example will be used instead of repetative 3 !!
+    There will be some custom Css rules in this file needs to be applied in the future changes
+*/
+
+/* Set Css rules for Html Select element class name of Select-Select-inputselect specialtySelect-select */
+.specialtySelect-select
+{
+    width: 350px !important;
+}

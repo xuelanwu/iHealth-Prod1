@@ -9,14 +9,9 @@ import "./SelectDisease.css";
 function SelectDisease({selectoptions}) 
 {
   
-  
-  
-
-
-
  return (
     <>
-      <section className="Select-disease-wrapper">
+      <section className="Select-SFProvider-wrapper">
 
           <p className='Select-Select-topic'>Disease</p>
 

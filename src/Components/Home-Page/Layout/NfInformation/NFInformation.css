@@ -1,6 +1,5 @@
 #nfinformation-container
 {
-    overflow-x: hidden;
     margin: 0 10%;
     margin-bottom: 14rem;
     margin-top: 4rem;
@@ -14,6 +13,6 @@
 {
     #nfinformation-container
     {
-        overflow-x: visible;
+        margin: 0 10%;
     }
 }
