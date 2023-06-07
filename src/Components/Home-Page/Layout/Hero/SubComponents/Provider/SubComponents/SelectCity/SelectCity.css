@@ -31,12 +31,11 @@
 
 .Select-additional-Use-location:before
 {
-    content: url('../../../../../../../../Assets/Icons/search-man.svg');
+    content: url('../../../../../../../../Assets/Icons/location-icon.svg');
     display: flex;
     width: 5px;
-    scale: 0.50;
     position: absolute;
-    top: -12px;
+    top: -5px;
     left: -20px;
 }
 

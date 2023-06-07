@@ -10,7 +10,13 @@ import NFInformation from "src/Components/Home-Page/Layout/NfInformation/NFInfor
 import NFCommunity from "src/Components/Home-Page/Layout/NfCommunity/NFCommunity";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 
-const index = () => {
+
+
+
+const index = () => 
+{
+
+
   return (
     <>
       <Hero />

@@ -16,7 +16,11 @@ import Other from "./Pages/Other/index";
 
 // import Navbar from "./Components/Navbar/Navbar";
 
-function App() {
+function App() 
+{
+
+
+
   const router = createBrowserRouter([
     {
       path: "/",

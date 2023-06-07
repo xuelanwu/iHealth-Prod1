@@ -24,7 +24,7 @@ function SelectCity({cityList})
 
           <div className='Select-Select-inputselect SelectCity-Select-select'>
             <select name="Diseases" className="Select-selectOptions">
-                <option value="none" selected disabled hidden>Select State</option>
+                <option value="none" selected disabled hidden>Select City</option>
                 {cityList.map((arg,i)=>
                 {
                   return(<option value={arg} key={i+arg}>{arg}</option>)
