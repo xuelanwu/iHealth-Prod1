@@ -1,0 +1,43 @@
+/* !!!! important Notice : This subcomponent is duplicate of SelectDisease subcomponent All generic design css rules is in the SelectDisease css file.
+    In the future After final design and functionanlity decided wheather only 1 component example will be used instead of repetative 3 !!
+    There will be some custom Css rules in this file needs to be applied in the future changes
+*/
+
+
+
+.SelectCity-Select-select
+{
+    width: 135px !important;
+}
+
+
+.SelectCity-Location-container
+{
+    transform: translateY(-5px) !important;
+    padding-left: 30px;
+}
+
+.Select-additional-Use-location
+{
+    all: unset;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #07235B;
+    cursor: pointer;
+    position: relative;
+}
+
+.Select-additional-Use-location:before
+{
+    content: url('../../../../../../../../Assets/Icons/search-man.svg');
+    display: flex;
+    width: 5px;
+    scale: 0.50;
+    position: absolute;
+    top: -12px;
+    left: -20px;
+}
+
+

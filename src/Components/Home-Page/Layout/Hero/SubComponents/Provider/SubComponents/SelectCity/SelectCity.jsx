@@ -1,11 +1,43 @@
+//Import Libraries/Packages
 import React from 'react'
 
+//Import Styles
+import "./SelectCity.css";
 
 
-function SelectCity() 
+
+
+
+/* This Function just to simply an example to get location of user and log on the console, this will be changed in the future  */
+const GetLocationInfo = () => {navigator.geolocation.getCurrentPosition( position => console.log(position), error => console.log(error));}
+/* This Function just to simply an example to get location of user and log on the console, this will be changed in the future  */
+
+
+
+function SelectCity({cityList}) 
 {
   return (
-    <div>SelectCity</div>
+    <>
+      <section className="Select-SFProvider-wrapper">
+
+          <p className='Select-Select-topic'>City</p>
+
+          <div className='Select-Select-inputselect SelectCity-Select-select'>
+            <select name="Diseases" className="Select-selectOptions">
+                <option value="none" selected disabled hidden>Select State</option>
+                {cityList.map((arg,i)=>
+                {
+                  return(<option value={arg} key={i+arg}>{arg}</option>)
+                })}
+            </select>
+          </div>
+
+          <div className='Select-Select-additional-info SelectCity-Location-container'>
+            <button onClick={GetLocationInfo} className="Select-additional-Use-location">Use My Location</button>
+          </div>
+
+      </section>
+    </>
   )
 }
 

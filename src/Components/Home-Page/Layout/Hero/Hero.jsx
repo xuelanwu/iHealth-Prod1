@@ -15,7 +15,7 @@ import imageforHero from "../../../../Assets/Images/hero-main-pic.png";
 
 const Hero = () => 
 {
-  const [selected, setSelected] = useState("Select Disease");
+
 
   return (
     <>
@@ -33,7 +33,7 @@ const Hero = () =>
           </h4>
         </div>
       </div>
-      <Provider selected={selected} setSelected={setSelected} />
+      <Provider /> 
       <Community />
     </>
   );
