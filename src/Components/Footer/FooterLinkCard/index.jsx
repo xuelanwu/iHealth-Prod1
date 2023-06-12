@@ -8,8 +8,16 @@ const FooterLinkCard = ({ linkCard }) => {
         <h3 className="footer-link-title">{category}</h3>
       </div>
       <div className="footer-link-links-block">
-        {links.map((link) => (
-          <a className="footer-links" onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} href={link.path}>
+        {links.map((link, idx) => (
+          <a
+            className="footer-links"
+            onClick={() => {
+              document.querySelector("#UnderConst-wrapper").style.display =
+                "flex";
+            }}
+            href={link.path}
+            key={`footer-links-${idx}`}
+          >
             {link.title}
           </a>
         ))}

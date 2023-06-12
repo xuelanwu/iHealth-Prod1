@@ -30,11 +30,9 @@ const PartnerWithUs = () => {
           window.innerHeight || document.documentElement.clientHeight;
         if (rectLeft.top >= 0 && rectLeft.top <= windowHeight) {
           setSlideInLeft(true);
-          console.log("left in-view");
         } else setSlideInLeft(false);
         if (rectRight.top >= 0 && rectRight.top <= windowHeight) {
           setSlideInRight(true);
-          console.log("right in-view");
         } else setSlideInRight(false);
       }
     };
