@@ -42,8 +42,8 @@ const OurServices = () => {
         }`}
         ref={divRef}
       >
-        {Services.map((service) => (
-          <OurServicesCard service={service} />
+        {Services.map((service, idx) => (
+          <OurServicesCard service={service} key={`our-services-${idx}`} />
         ))}
       </div>
     </div>
