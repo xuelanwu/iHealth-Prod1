@@ -21,7 +21,7 @@ function MobileInputSearch({diseaseOptns})
             <p id='MobileInputSearch-topic'>Search & Find a Medical or Wellness Provider</p>
 
             <div id='MobileInputSearch-input-container'>
-                <input type='text' placeholder='Search by Disease, Specialty, or Name' spellcheck="false" autoComplete='false' onChange={(e)=>{setUserInputSearchData(e.target.value)}} onBlur={(e)=>{setUserInputSearchData("");e.target.value = ""}} />
+                <input type='text' placeholder='Search by Disease, Specialty, or Name' spellcheck="false" autoComplete='false' onChange={(e)=>{setUserInputSearchData(e.target.value)}} onBlur={(e)=>{setTimeout(()=>{setUserInputSearchData("");e.target.value = ""},1000)}} />
             </div>
 
             { 
