@@ -17,6 +17,7 @@ import SelectDisease from "./SubComponents/SelectDisease/SelectDisease";
 import SelectSpecialty from "./SubComponents/SelectSpecialty/SelectSpecialty";
 import SelectCity from "./SubComponents/SelectCity/SelectCity";
 import ButtonsSearchDonate from "./SubComponents/ButtonsSearchDonate/ButtonsSearchDonate";
+import MobileInputSearch from "./SubComponents/MobileInputSearch/MobileInputSearch";
 
 
 
@@ -57,6 +58,9 @@ const Provider = () =>
           <SelectDisease selectoptions={options} />
           <SelectSpecialty specialityOptions={specialityType} />
           <SelectCity cityList={cityList} />
+
+          {/* ----- Mobile ----- */}
+          <MobileInputSearch diseaseOptns={options} />
         </div>
 
         <div className="buttons-wrapper">

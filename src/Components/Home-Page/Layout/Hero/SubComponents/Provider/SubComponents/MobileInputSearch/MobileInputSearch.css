@@ -1,0 +1,94 @@
+/* Set Css rules for Search & Find a Medical or Wellness Provider Mobile section Search Input wrapper   */
+#MobileInputSearch-wrapper
+{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+}
+
+
+#MobileInputSearch-topic
+{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1dvw;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #07235B;
+    align-self: center;
+    padding: 5px;
+}
+
+
+#MobileInputSearch-input-container
+{
+    width: calc(80vw - 24vw);
+}
+
+#MobileInputSearch-input-container > input
+{
+    width: 100%;
+
+    padding: 2px 9px 2px 8.25px;
+    user-select: none;
+    border: 0.825px solid #B3B3B3;
+    border-radius: 5.3px;
+    background-color: #F3F3F3;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2dvw;
+    line-height: 20px;
+    color: #858EAD;
+
+    display: block;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url('../../../../../../../../Assets/Icons/SelectDiseaseArrow.png'),
+	linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+	background-repeat: no-repeat, repeat;
+	background-position: right 1.1em top 50%, 0 0;
+	background-size: 11px auto, 100%;
+}
+
+#MobileInputSearch-input-container > input:focus-visible
+{
+    outline: 1.825px solid #07235b;
+}
+
+
+#MobileInputSearch-data-show
+{
+    position: relative;
+}
+
+#MobileInputSearch-data-show-list-data-container
+{
+    position: absolute;
+    max-height: 450px;
+    background: white;
+    width: calc(100% - 2%);
+    padding: 11px 10px;
+    z-index: 2;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (min-width: 601px) 
+{
+    #MobileInputSearch-wrapper
+    {
+        display: none;
+    }
+}

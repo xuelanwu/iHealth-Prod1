@@ -40,3 +40,27 @@
 }
 
 
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 1300px) 
+{
+    .SelectCity-Select-select
+    {
+        max-width: 7rem;
+    }
+}
+
+@media only screen and (max-width: 710px) 
+{
+    /* Set Css rules for Search & Find a Medical or Wellness Provider section select inputs` section wrapper  */
+    .SelectCity-wrapper
+    {
+        scale: 0.8;
+        max-width: 7rem;
+    }
+}
+
+
+
+

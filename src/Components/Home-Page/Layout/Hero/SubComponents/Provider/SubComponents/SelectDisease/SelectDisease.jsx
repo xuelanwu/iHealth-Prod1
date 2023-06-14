@@ -11,7 +11,7 @@ function SelectDisease({selectoptions})
   
  return (
     <>
-      <section className="Select-SFProvider-wrapper">
+      <section className="Select-SFProvider-wrapper SelectDisease-wrapper">
 
           <p className='Select-Select-topic'>Disease</p>
 

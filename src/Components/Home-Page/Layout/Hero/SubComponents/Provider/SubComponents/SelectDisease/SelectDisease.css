@@ -96,3 +96,35 @@
     font-size: 14px;
     margin-left: 3px;
 }
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 1300px) 
+{
+    /* Set Css rules for Search & Find a Medical or Wellness Provider section select inputs` main div for selectOptions  */
+    .Select-Select-inputselect
+    {
+        max-width: 11.7rem;
+    }
+}
+
+@media only screen and (max-width: 710px) 
+{
+    /* Set Css rules for Search & Find a Medical or Wellness Provider section select inputs` section wrapper  */
+    .SelectDisease-wrapper
+    {
+        scale: 0.8;
+        max-width: 9.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) 
+{
+    /* Set Css rules for Search & Find a Medical or Wellness Provider section select inputs` section wrapper  */
+    .Select-SFProvider-wrapper
+    {
+        display: none;
+    }
+
+}
