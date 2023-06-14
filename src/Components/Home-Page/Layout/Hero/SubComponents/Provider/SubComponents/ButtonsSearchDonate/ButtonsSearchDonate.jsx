@@ -16,10 +16,10 @@ function ButtonsSearchDonate()
         
         <div className="search-donate">
             <div className="search-container">
-                <button className="search-btn">Search</button>
+                <button onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className="search-btn">Search</button>
             </div>
             <div className="frame-donate">
-                <Link to="/donate" className="donate-now">Donate Now</Link>
+                <Link onClick={()=>{document.querySelector('#UnderConst-wrapper').style.display = "flex"}} className="donate-now">Donate Now</Link>
             </div>
         </div>
       
