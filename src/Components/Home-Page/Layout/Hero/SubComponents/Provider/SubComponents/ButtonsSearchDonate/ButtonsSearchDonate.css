@@ -15,23 +15,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 56.92px;
+  width: 10.2dvw;
+  height: 3.15dvw;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1dvw;
   background: #07235b;
   color: white;
   border: none;
   border-radius: 10px;
   font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
   line-height: 33px;
   display: flex;
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+  position: relative;
 }
 
 .search-btn:hover 
@@ -43,8 +42,8 @@
 /* Set Css rules for Donate Button  */
 .frame-donate 
 {
-  width: 180px;
-  height: 57px;
+  width: 10.2dvw;
+  height: 3.15dvw;
   background: #0D99FF;
   border: 2px solid #2947a900;
   text-align: center;
@@ -74,9 +73,75 @@
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1dvw;
   line-height: 33px;
   text-align: center;
   color: #FFFFFF;
   transition: 0.4s;
+}
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 1300px) 
+{
+  .search-donate 
+  {
+    gap: 1dvw;
+  }
+
+}
+
+
+@media only screen and (max-width: 1000px) 
+{
+  /* Set Css rules for Search Button  */
+  .search-btn,.frame-donate, .search-btn:hover,.frame-donate:hover
+  {
+    border-radius: 6px;
+    width: 11.2dvw;
+    height: 4.15dvw;
+    font-size: 1.5dvw;
+  }
+
+  .donate-now 
+  {
+    font-size: 1.5dvw;
+  }
+
+
+}
+@media only screen and (max-width: 700px) 
+{
+  /* Set Css rules for Search Button  */
+  .search-btn,.frame-donate, .search-btn:hover,.frame-donate:hover
+  {
+    border-radius: 3px;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) 
+{
+  .search-donate 
+  {
+  transform: translateY(0px);
+  }
+
+  .search-btn::after
+  {
+    content: url(../../../../../../../../Assets/Icons/search-icon.svg);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 7px;
+    scale: 0.5;
+  }
+
+  .search-btn,.frame-donate, .search-btn:hover,.frame-donate:hover
+  {
+    width: 15.2dvw;
+    height: 4.45dvw;
+    border-radius: 7px;
+  }
 }

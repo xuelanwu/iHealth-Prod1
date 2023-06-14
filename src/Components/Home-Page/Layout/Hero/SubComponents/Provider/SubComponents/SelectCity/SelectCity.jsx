@@ -18,7 +18,7 @@ function SelectCity({cityList})
 {
   return (
     <>
-      <section className="Select-SFProvider-wrapper">
+      <section className="Select-SFProvider-wrapper SelectCity-wrapper">
 
           <p className='Select-Select-topic'>City</p>
 

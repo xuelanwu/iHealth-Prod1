@@ -12,7 +12,7 @@ function SelectSpecialty({specialityOptions})
   
   return (
     <>
-      <section className="Select-SFProvider-wrapper">
+      <section className="Select-SFProvider-wrapper SelectSpecialty-wrapper">
 
         <p className='Select-Select-topic'>Specialty</p>
 
