@@ -1,7 +1,18 @@
 #nfinformation-container
 {
-    overflow-x: hidden;
     margin: 0 10%;
     margin-bottom: 14rem;
     margin-top: 4rem;
+}
+
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 810px) 
+{
+    #nfinformation-container
+    {
+        margin: 0 10%;
+    }
 }

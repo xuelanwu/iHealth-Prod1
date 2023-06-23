@@ -1,349 +1,120 @@
-.frame-container {
-  position: absolute;
-  overflow: hidden;
-  width: 95%;
-  border-radius: 10px;
-  height: 150px;
-  top: 55rem;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(255, 255, 255, 0.7);
-}
 
-.input-wrapper {
-  display: flex;
-  place-items: center;
-  flex-direction: row;
-  justify-content: center;
-  height: 100%;
-  width: 98%;
-  gap: 1rem;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.search-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 6rem;
-  height: 40px;
-  font-weight: 600;
-  font-size: 14px;
-  background: #07235b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-
-.search-btn:hover {
-  cursor: pointer;
-}
-
-.frame-donate {
-  width: 7rem;
-  height: 40px;
-  background: #0D99FF;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.donate-now {
-  text-decoration: none;
-  color: white;
-  line-height: 40px;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.specialty {
-  top: 20%;
-  margin-left: -32%;
-  position: absolute;
-  font-size: 14px;
-  font-weight: 500;
-  color: #07235b;
-  font-weight: bold;
-  font-size: 17px;
-  font-family: "Work Sans";
-}
-
-.city-header {
-  top: 20%;
-  margin-left: 15%;
-  position: absolute;
-  font-size: 14px;
-  font-weight: 500;
-  color: #07235b;
-  font-weight: bold;
-  font-size: 17px;
-  font-family: "Work Sans";
-}
-
-.data-title {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #B3B3B3;
-}
-
-.search-donate {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.dropdown-content {
-  position: absolute;
-  display: grid;
-  background-color: #0D99FF;
-  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-  font-weight: 400;
-  color: white;
-  max-width: fit-content;
-  border-radius: 5px;
-  top: 90%;
-  padding: 2px;
-  margin-left: -15px;
-}
-
-.dropdown-item {
-  font-size: 15px;
-  padding: 7px 2px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.dropdown-item:hover {
-  background: #062758;
-  border-radius: 3px;
-}
-
-
-.dropdown-text {
-  cursor: pointer;
-  color: #B3B3B3;
-
-}
-
-.dropdown {
-  position: relative;
-  padding: 10px 14px;
-  user-select: none;
-  border: 1px solid #b3b3b3;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
-  margin-top: 50px;
-
-
-}
-
-.disease {
-  padding: 10px 14px;
-  user-select: none;
-  border: 1px solid #b3b3b3;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
-}
-
-.zip-code input {
-  padding: 10px 14px;
-  border: 1px solid #b3b3b3;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
-  width: 120px;
-}
-
-.text-disease {
-  margin-bottom: 18px;
-}
-
-/* .text-disease small {
-  position: absolute;
-  top: 20%;
-  margin: 0px 10px;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.65);
-
-} */
-
-.small {
-  position: absolute;
-  top: 25%;
-  line-height: 10px;
-  margin: 0px 10px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #07235B;
-  font-weight: bold;
-}
-
-.disease-header {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  position: absolute;
-  top: 25%;
-  line-height: 10px;
-  margin: 0px 10px;
-  color: #07235B;
-  font-weight: bold;
-}
-
-.type {
-  width: 20%;
-  padding: 10px 14px;
-  user-select: none;
-  border: 1px solid #b3b3b3;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
-  cursor: pointer;
-  color: #B3B3B3
-}
-
-.city {
-  width: 15%;
-  padding: 10px 14px;
-  user-select: none;
-  border: 1px solid #b3b3b3;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
-  cursor: pointer;
-  color: #B3B3B3
-}
-
-.patient-field {
-  margin-top: 2%;
-}
-
-.patient-status {
-  color: #B3B3B3;
-  font-size: 14px;
-  margin-left: 3px;
-}
-
-
-
-
-/* MEDIA QUERIES */
-
-@media (width >=1440px) {
-  .frame-container {
-    width: 80%;
-  }
-
-  .input-wrapper {
+/* Set Css rules for Frame container top section */
+.frame-container 
+{
+    position: absolute;
+    overflow: visible;
+    border-radius: 29px;
+    height: 190px;
+    top: 50rem;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
-    flex-grow: 5;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 10px;
-    gap: 0;
-  }
+    place-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    left: calc(50%);
+    transform: translateX(calc(-50%));
+    min-width: 65vw;
+    gap: 3rem;
+    max-height: 24vw;
+}
 
-  .data-title {
-    font-size: 16px;
-    width: fit-content;
-  }
+.frame-container::before
+{
+    content:url(/src/Assets/Icons/search-man.svg) "\00a0 \00a0 Search & Find a Medical or Wellness Provider";
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #07235B;
+    position: absolute;
+    top: -40px;
+    left: 52px;
+    
+}
 
-  .dropdown-text {
-    font-size: 16px;
-  }
 
-  .frame-donate {
-    width: 9rem;
-    border-radius: 6px;
-  }
+/* Set Css rules for the wrapper div element for all select input elements */
+.input-wrapper 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  
+}
 
-  .search-btn {
-    width: 8rem;
-    border-radius: 5px;
-  }
+/* Set Css rules for the wrapper div element for all button elements */
+.buttons-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 1250px) 
+{
+    .frame-container 
+    {
+        gap: 0;
+        min-width: 80vw;
+    }
+
+    .frame-container::before
+    {
+        font-size: 1.7dvw;
+    }
 
 }
 
-@media (width <=1439px) {
+@media only screen and (max-width: 850px) 
+{
+    .frame-container 
+    {
 
-  .frame-container {
-    width: 90%;
-  }
+        min-width: 90vw;
+    }
 
-  .input-wrapper {
-    width: 100%;
-    justify-content: space-around;
-    padding: 10px;
-    gap: 0;
-  }
-
+    .frame-container::before
+    {
+        font-size: 1.8dvw;
+    }
 }
 
-@media (width <=1250px) {
-  .frame-container {
-    width: 95%;
-  }
 
-  .input-wrapper {
-    gap: 0rem;
-  }
+@media only screen and (max-width: 600px) 
+{
+    .frame-container 
+    {
 
-  .data-title {
-    font-size: 13px;
-  }
-
-  .dropdown-text {
-    font-size: 13px;
-  }
-
-  .frame-donate {
-    width: 5rem;
-    border-radius: 4px;
-  }
-
-  .search-btn {
-    width: 5rem;
-    border-radius: 4px;
-  }
+        min-width: 80vw;
+        border-radius: 24px;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+    .frame-container::before
+    {
+        content: "";
+        display: none;
+    }
 }
 
-@media (width < 1181px) {
-  .frame-container {
-    width: 98%;
-  }
-}
 
-@media (width > 2060px) {
-  .frame-container {
-    width: 70%;
-    height: 13%;
-  }
-
-  .input-wrapper {
-    justify-content: space-between;
-    width: 90%;
-  }
-
-  .data-title {
-    font-size: 20px;
-  }
-
-  .dropdown-text {
-    font-size: 20px;
-  }
-
-  .frame-donate {
-    width: 10rem;
-    border-radius: 4px;
-  }
-
-  .search-btn {
-    width: 8rem;
-    border-radius: 4px;
-  }
+@media only screen and (max-width: 350px) 
+{
+    .frame-container 
+    {
+        max-height: 47vw;
+        
+    }
 }

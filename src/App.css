@@ -5,7 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
-html {scroll-behavior: smooth;overflow-x: hidden;}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 .App {
   scroll-behavior: smooth;

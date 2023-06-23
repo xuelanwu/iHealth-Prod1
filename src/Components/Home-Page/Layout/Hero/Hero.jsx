@@ -15,13 +15,13 @@ import imageforHero from "../../../../Assets/Images/hero-main-pic.png";
 
 const Hero = () => 
 {
-  const [selected, setSelected] = useState("Select Disease");
+
 
   return (
     <>
       <div className="hero-wrapper">
         <div className="hero-image-container">
-          <img src={imageforHero} alt="Doctor with patients image for Hero section" />
+          <img src={imageforHero} loading='lazy' alt="Doctor with patients image for Hero section" />
         </div>
         <div className="hero-text-container">
           <h5 className="comitted">-Committed to success</h5>
@@ -33,7 +33,7 @@ const Hero = () =>
           </h4>
         </div>
       </div>
-      <Provider selected={selected} setSelected={setSelected} />
+      <Provider /> 
       <Community />
     </>
   );

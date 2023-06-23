@@ -9,7 +9,7 @@ import partnerXRayImg from "../../Assets/Images/partner-x-ray.png";
 import partnerHeartImg from "../../Assets/Images/partner-heart.jpg";
 import partnerMassageImg from "../../Assets/Images/partner-massage.jpg";
 import partnerElectronicHealthRecordImg from "../../Assets/Images/partner-electronic-health-record.jpg";
-import partnerSmileImg from "../../Assets/Images/partner-smile.jpg";
+import partnerFemaleImg from "../../Assets/Images/partner-female.jpg";
 
 import "./index.css";
 
@@ -30,11 +30,9 @@ const PartnerWithUs = () => {
           window.innerHeight || document.documentElement.clientHeight;
         if (rectLeft.top >= 0 && rectLeft.top <= windowHeight) {
           setSlideInLeft(true);
-          console.log("left in-view");
         } else setSlideInLeft(false);
         if (rectRight.top >= 0 && rectRight.top <= windowHeight) {
           setSlideInRight(true);
-          console.log("right in-view");
         } else setSlideInRight(false);
       }
     };
@@ -51,7 +49,7 @@ const PartnerWithUs = () => {
           Providers, and Health Systems
         </h2>
       </div>
-      <div className="partner-with-us-inner" ref={slideInLeftRef}>
+      <div className="partner-with-us-inner left top" ref={slideInLeftRef}>
         <div
           className={`partner-with-us-inner-text-left ${
             slideInLeft ? "slide-in" : ""
@@ -90,16 +88,17 @@ const PartnerWithUs = () => {
         <div className="partner-with-us-inner-img">
           <img
             className="partner-with-us-inner-img-solo"
-            src={partnerBabyImg}
+            src={partnerFemaleImg}
           ></img>
+
           <div className="partner-with-us-img-stack">
+            <img src={partnerBabyImg}></img>
             <img src={partnerMassageImg}></img>
-            <img src={partnerSmileImg}></img>
           </div>
         </div>
       </div>
 
-      <div className="partner-with-us-inner bottom" ref={slideInRightRef}>
+      <div className="partner-with-us-inner right bottom" ref={slideInRightRef}>
         <div className="partner-with-us-inner-img">
           <div className="partner-with-us-img-stack">
             <img src={partnerElectronicHealthRecordImg}></img>

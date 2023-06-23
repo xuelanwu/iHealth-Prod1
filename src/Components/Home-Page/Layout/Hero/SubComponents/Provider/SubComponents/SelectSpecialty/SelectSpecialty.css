@@ -1,0 +1,33 @@
+/* !!!! important Notice : This subcomponent is duplicate of SelectDisease subcomponent All generic design css rules is in the SelectDisease css file.
+    In the future After final design and functionanlity decided wheather only 1 component example will be used instead of repetative 3 !!
+    There will be some custom Css rules in this file needs to be applied in the future changes
+*/
+
+/* Set Css rules for Html Select element class name of Select-Select-inputselect specialtySelect-select */
+.specialtySelect-select
+{
+    width: 18dvw !important;
+}
+
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 1600px) 
+{
+    .specialtySelect-select
+    {
+        width: 10dvw !important;
+        min-width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 710px) 
+{
+    /* Set Css rules for Search & Find a Medical or Wellness Provider section select inputs` section wrapper  */
+    .SelectSpecialty-wrapper
+    {
+        scale: 0.8;
+        max-width: 7rem;
+    }
+}

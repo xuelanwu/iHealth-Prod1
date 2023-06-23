@@ -8,7 +8,7 @@ const Other = () => {
     <>
       <div className="construction-container">
         <div className="construction-inner">
-          <img src={ConstructionImg} className="construction-img"></img>
+          <img src={ConstructionImg} loading='lazy' className="construction-img"></img>
           <Link to="/" className="construction-button ">
             Close
           </Link>
