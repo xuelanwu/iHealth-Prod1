@@ -11,9 +11,15 @@
   background-color: #f6f8f7;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .information-container {
+    background-color: #f6f8f7;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .information-divider {
-    height: 20vh;
+    height: 25vh;
     background-color: #fff;
   }
 }

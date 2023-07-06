@@ -58,6 +58,24 @@
   display: none;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .how-it-works-card.even {
+    padding-top: 20rem;
+  }
+
+  .how-it-works-content-block {
+    position: relative;
+  }
+
+  .how-it-works-number {
+    margin: 0;
+    position: absolute;
+    right: 75%;
+    top: -6rem;
+    z-index: -1;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .how-it-works-card {
     width: 80%;

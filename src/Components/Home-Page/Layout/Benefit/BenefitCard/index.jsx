@@ -64,15 +64,10 @@ const BenefitCard = ({ benefit }) => {
             <img className="benefit-img" src={benefit.image}></img>
           </div>
           <div className="benefit-flipcard-back">
-            <p className="benefit-flipcard-summary SN-M-P-16">
-              {benefit.summary}
-            </p>
-            <ol className="benefit-flipcard-list SN-M-P-16">
+            <p className="benefit-flipcard-summary">{benefit.summary}</p>
+            <ol className="benefit-flipcard-list">
               {benefit.details.map((detail) => (
-                <li
-                  className="benefit-flipcard-listitem SN-M-P-16"
-                  key={detail}
-                >
+                <li className="benefit-flipcard-listitem" key={detail}>
                   {detail}
                 </li>
               ))}

@@ -19,6 +19,24 @@
   padding: 1rem;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .how-it-works-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 5rem 0;
+  }
+
+  .how-it-works-cards {
+    display: grid;
+    /* max-width: 448px; */
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+    row-gap: 2rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .how-it-works-container {
     padding: 5rem 0;

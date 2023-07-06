@@ -47,8 +47,20 @@
   padding: 2rem;
 }
 
+.benefit-flipcard-summary {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
 .benefit-flipcard-list {
   padding: 1rem;
+}
+
+.benefit-flipcard-listitem {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 /* .benefit-card {

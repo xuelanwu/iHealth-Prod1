@@ -71,6 +71,35 @@
   border-radius: 1rem;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .team-join-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-join-card-inner {
+    max-width: 390px;
+    padding: 3rem 2rem;
+  }
+
+  .team-join-heading {
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 110%;
+  }
+
+  .team-join-slogan {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  .team-join-btn {
+    padding: 1rem 5rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .team-container {
     padding: 5rem 0;

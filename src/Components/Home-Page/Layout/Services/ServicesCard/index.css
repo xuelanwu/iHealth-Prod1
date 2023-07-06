@@ -44,8 +44,29 @@
   color: #fff;
 }
 
-.services-hover:hover .services-card-SN-M-P-16 {
+.services-hover:hover .services-card-heading {
   color: #fff;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .services-card {
+    max-width: 390px;
+  }
+
+  .services-hover {
+    padding: 3rem;
+    aspect-ratio: 1 / 0.8;
+  }
+
+  .services-card-heading {
+    color: rgba(7, 35, 91, 1);
+  }
+
+  .services-card-content {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 110%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
