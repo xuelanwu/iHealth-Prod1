@@ -2,17 +2,17 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import NavDropdownButton from "./NavDropdown";
-import desktopLogo from "../../../Assets/Brand/logo-nav-desktop.png";
-import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
+import desktopLogo from "src/Assets/Brand/logo-nav-desktop.png";
+import mobileLogo from "src/Assets/Brand/logo-nav-mobile.png";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="nav-container">
+    <nav className="nav-container">
+      <div className="nav-inner-container">
         <NavDropdownButton />
-        <div className="nav-inner-container">
+        <div className="nav-links-container">
           <div className="nav-logo-block">
             <NavLink to="/" className="nav-logo">
               <picture>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 >
                   <AccountCircleIcon
                     className="circle-icon"
-                    sx={{ fontSize: 32, marginLeft: 0.5 }}
+                    sx={{ fontSize: 32, marginLeft: 0 }}
                     sm={{ fontSize: 48 }}
                   />
                   <span className="nav-signin-span">Sign up or Log In</span>
@@ -104,8 +104,8 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 

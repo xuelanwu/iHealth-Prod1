@@ -18,7 +18,7 @@
   flex-direction: column;
 }
 
-/* Set rules for Both Paragraphs */
+/* Set rules for Both SN-M-P-16s */
 #nfcommunity-header > p {
   font-family: "Work Sans";
   font-style: normal;
@@ -27,12 +27,12 @@
   color: #07235b;
 }
 
-/* Set rules for Neurofibromatosis (NF) Team Paragraph */
+/* Set rules for Neurofibromatosis (NF) Team SN-M-P-16 */
 #nfcommunity-header > p:nth-child(1) {
   font-size: 60px;
 }
 
-/* Set rules for Stronger Together Paragraph */
+/* Set rules for Stronger Together SN-M-P-16 */
 #nfcommunity-header > p:nth-child(2) {
   font-size: 32px;
   letter-spacing: -0.01em;
@@ -41,14 +41,14 @@
 /* -------------------- Responsive Css Rules -------------------- */
 
 @media only screen and (max-width: 1100px) {
-  /* Set rules for Neurofibromatosis (NF) Team Paragraph */
+  /* Set rules for Neurofibromatosis (NF) Team SN-M-P-16 */
   #nfcommunity-header > p:nth-child(1) {
     font-size: 4vw;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  /* Set rules for Neurofibromatosis (NF) Team Paragraph */
+  /* Set rules for Neurofibromatosis (NF) Team SN-M-P-16 */
   #nfcommunity-header {
     align-items: center;
   }
