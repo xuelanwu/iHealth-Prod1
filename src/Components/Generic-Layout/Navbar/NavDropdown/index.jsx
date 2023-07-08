@@ -12,7 +12,6 @@ const NavDropdownButton = () => {
 
   const openMenu = (e) => {
     e.stopPropagation();
-
     setShowMenu((prev) => !prev);
   };
 

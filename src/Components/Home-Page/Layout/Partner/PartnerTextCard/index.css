@@ -1,0 +1,37 @@
+.partner-text-card {
+  background-color: #07235b;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  color: #ffffff;
+}
+
+.partner-text-subheading {
+  color: #0d99ff;
+}
+
+.partner-text-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.partner-text-span {
+  display: block;
+}
+
+.partner-link {
+  width: fit-content;
+  outline: 1px solid #ffffff;
+  background-color: #07235b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.partner-link:hover {
+  background-color: #ffffff;
+  color: #07235b;
+  transition: background-color 0.5s ease-in-out;
+}

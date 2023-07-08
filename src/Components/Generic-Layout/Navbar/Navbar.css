@@ -1,15 +1,22 @@
 .nav-container {
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 0;
   background-color: #07235b;
-  padding: 1rem 8rem;
   position: relative;
 }
 
 .nav-inner-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links-container {
   flex-grow: 1;
   margin: auto;
   display: flex;
@@ -17,13 +24,18 @@
   align-items: center;
 }
 
-.nav-logo-img {
-  width: 200px;
+.nav-logo-block {
+  width: 32px;
+  height: 32px;
 }
 
-.nav-links-block {
-  display: flex;
-  gap: 1rem;
+.nav-logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-links-list.desktop {
+  display: none;
 }
 
 .nav-links-list {
@@ -33,49 +45,64 @@
   list-style: none;
 }
 
-.nav-links {
-  text-decoration: none;
-  color: white;
-}
-
 .nav-signin {
   display: flex;
   align-items: center;
 }
 
+.nav-signin-span {
+  display: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: white;
+}
+
 .nav-donate {
   padding: 0.5rem 1rem;
   background-color: #0d99ff;
-  border: 1px solid #0d99ff;
+  border: none;
   border-radius: 0.5rem;
 }
 
 .nav-donate:hover {
-  border: 1px solid #07235b;
+  outline: 1px solid #07235b;
   background-color: #fff;
   color: #07235b;
 }
+/*
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
 
-@media only screen and (max-width: 767px) {
-  .nav-container {
-    padding: 1rem;
+} */
+
+@media only screen and (min-width: 1024px) {
+  .nav-inner-container {
+    width: 90%;
+    max-width: 1216px;
+    padding: 1rem 0;
+  }
+
+  .nav-logo-block {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .nav-logo-img {
+    width: 290px;
+    height: auto;
+  }
+
+  .nav-links-block {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-links-list.desktop {
+    display: flex;
   }
 
   .nav-signin-span {
-    display: none;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .nav-container {
-    padding: 1rem 3rem;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  .nav-logo-img {
-    width: 64px;
-  }
-  .nav-links-list.desktop {
-    display: none;
+    display: inline-block;
   }
 }

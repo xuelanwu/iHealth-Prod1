@@ -50,7 +50,7 @@
   border-radius: 6px;
 }
 
-/* Set rules for all paragraph elements Join Button section */
+/* Set rules for all SN-M-P-16 elements Join Button section */
 #nfcommunity-join-button-container > * {
   font-family: "Work Sans";
   font-style: normal;
@@ -58,14 +58,14 @@
   color: #ffffff;
 }
 
-/* Set rules for first paragraph Join NF Community */
+/* Set rules for first SN-M-P-16 Join NF Community */
 #nfcommunity-join-button-container > *:nth-child(1) {
   font-weight: 600;
   font-size: 2dvw;
   line-height: 120%;
 }
 
-/* Set rules for second paragraph Connect with other people...*/
+/* Set rules for second SN-M-P-16 Connect with other people...*/
 #nfcommunity-join-button-container > *:nth-child(2) {
   font-weight: 400;
   font-size: 0.8dvw;
@@ -134,12 +134,12 @@
     transform: translate3d(0px, -48%, 0px);
   }
 
-  /* Set rules for first paragraph Join NF Community */
+  /* Set rules for first SN-M-P-16 Join NF Community */
   #nfcommunity-join-button-container > *:nth-child(1) {
     font-size: 1.2rem;
   }
 
-  /* Set rules for second paragraph Connect with other people...*/
+  /* Set rules for second SN-M-P-16 Connect with other people...*/
   #nfcommunity-join-button-container > *:nth-child(2) {
     font-size: 1rem;
     text-shadow: 0 0 1px white;

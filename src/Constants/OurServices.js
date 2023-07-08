@@ -3,7 +3,7 @@ import Icon2 from "../Assets/Icons/services-brain.svg";
 import Icon3 from "../Assets/Icons/services-laptop.svg";
 import Icon4 from "../Assets/Icons/services-man.svg";
 
-const Services = [
+const OurServices = [
   {
     icon: Icon1,
     title: "Medical & Wellness Provider Lookup",
@@ -30,4 +30,4 @@ const Services = [
   },
 ];
 
-export default Services;
+export default OurServices;
