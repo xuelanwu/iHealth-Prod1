@@ -31,7 +31,6 @@ const Hero = () => {
           <img
             className="hero-img"
             src={HeroMobile}
-            loading="lazy"
             alt="Doctor with patients image for Hero section"
           />
         </div>
