@@ -31,7 +31,11 @@ const Community = () => {
           NF TEAM
         </button>
         <button
-          onClick={() => setTeam("Geriatric Disease Team")}
+          onClick={() => {
+            setTeam("Geriatric Disease Team");
+            document.querySelector("#UnderConst-wrapper").style.display =
+              "flex";
+          }}
           className={
             team === "Geriatric Disease Team"
               ? "community-team-btn focus"
@@ -41,7 +45,11 @@ const Community = () => {
           Geriatric Disease Team <p className="coming-soon-p">(Coming soon)</p>
         </button>
         <button
-          onClick={() => setTeam("Cancer Team")}
+          onClick={() => {
+            setTeam("Cancer Team");
+            document.querySelector("#UnderConst-wrapper").style.display =
+              "flex";
+          }}
           className={
             team === "Cancer Team"
               ? "community-team-btn focus"
