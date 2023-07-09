@@ -74,6 +74,7 @@
 
   .provider-inner-container {
     width: 90%;
+    max-width: 1216px;
   }
 
   .provider-heading {

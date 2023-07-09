@@ -50,6 +50,7 @@
 
   .services-inner {
     width: 90%;
+    max-width: 1216px;
     background-color: #ffffff;
     flex-direction: row;
     padding-bottom: 3rem;
