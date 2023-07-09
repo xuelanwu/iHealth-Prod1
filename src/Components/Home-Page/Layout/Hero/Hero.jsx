@@ -6,7 +6,6 @@ import "./Hero.css";
 
 //import local assets/files/components
 import HeroMobile from "src/Assets/Images/hero-5x.png";
-import HeroDesktop from "src/Assets/Images/hero-1.png";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 
 const Hero = () => {
