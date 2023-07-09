@@ -1,4 +1,4 @@
-import Teams from "src/Constants/Teams.js";
+import Teams from "src/Constants/HomePage/Teams.js";
 
 import InformationCard from "./informationCard";
 

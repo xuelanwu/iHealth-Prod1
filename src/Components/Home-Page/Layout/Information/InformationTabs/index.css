@@ -44,6 +44,12 @@
   .information-tabs {
     max-width: 304px;
   }
+
+  .information-tab {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 110%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -55,6 +61,9 @@
 
   .information-tab-heading {
     padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 110%;
   }
 
   .information-tabs {
@@ -68,6 +77,9 @@
     padding: 2rem 0;
     border-radius: 0;
     border: 2.5px solid rgba(7, 35, 91, 0.05);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 100%;
   }
 
   .information-tab.focus {

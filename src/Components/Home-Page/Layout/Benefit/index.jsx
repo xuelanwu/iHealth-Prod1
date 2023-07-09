@@ -1,6 +1,6 @@
 import BenefitCard from "./BenefitCard";
 
-import Benefits from "src/Constants/Benefits.js";
+import Benefits from "src/Constants/HomePage/Benefits.js";
 
 import "./index.css";
 

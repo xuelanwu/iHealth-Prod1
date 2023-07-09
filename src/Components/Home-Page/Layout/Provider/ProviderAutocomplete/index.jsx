@@ -1,9 +1,13 @@
 import { Autocomplete, TextField } from "@mui/material";
 import ArrowDropDownCircleRoundedIcon from "@mui/icons-material/ArrowDropDownCircleRounded";
 
-const ProviderAutocomplete = ({ options, label }) => {
+const ProviderAutocomplete = ({ options, label, value, onInputChange }) => {
   return (
     <Autocomplete
+      value={value}
+      onChange={(event, newValue) => {
+        onInputChange(newValue);
+      }}
       sx={{
         "& .MuiOutlinedInput-root": {
           borderRadius: "0.5rem",

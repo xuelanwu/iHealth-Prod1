@@ -6,7 +6,6 @@ import "./Hero.css";
 
 //import local assets/files/components
 import HeroMobile from "src/Assets/Images/hero-5x.png";
-import HeroDesktop from "src/Assets/Images/hero-1.png";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 
 const Hero = () => {
@@ -31,7 +30,6 @@ const Hero = () => {
           <img
             className="hero-img"
             src={HeroMobile}
-            loading="lazy"
             alt="Doctor with patients image for Hero section"
           />
         </div>

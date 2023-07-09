@@ -20,7 +20,6 @@ const Navbar = () => {
                 <img
                   className="nav-logo-img"
                   src={desktopLogo}
-                  loading="lazy"
                   alt="confidential"
                 />
               </picture>

@@ -15,6 +15,7 @@ function ButtonsSearchDonate() {
           document.querySelector("#UnderConst-wrapper").style.display = "flex";
         }}
         className="provider-btn search"
+        type="submit"
       >
         Search
         <SearchOutlinedIcon

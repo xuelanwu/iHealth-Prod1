@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-import OurServices from "src/Constants/OurServices";
+import OurServices from "src/Constants/HomePage/OurServices";
 import ServicesCard from "./ServicesCard";
 
 import "./index.css";

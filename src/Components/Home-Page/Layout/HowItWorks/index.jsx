@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 import HowItWorksCard from "./HowItWorksCard";
 
-import HowItWorksSteps from "src/Constants/HowItWorks.js";
+import HowItWorksSteps from "src/Constants/HomePage/HowItWorks.js";
 
 import "./index.css";
 

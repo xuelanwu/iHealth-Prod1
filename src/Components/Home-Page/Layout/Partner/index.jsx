@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 import PartnerTextCard from "./PartnerTextCard";
 
-import Partners from "src/Constants/Partners.js";
+import Partners from "src/Constants/HomePage/Partners.js";
 
 import Baby from "src/Assets/Images/partner-baby.jpg";
 import XRay from "src/Assets/Images/partner-x-ray.png";
@@ -10,45 +10,28 @@ import Heart from "src/Assets/Images/partner-heart.jpg";
 import Massage from "src/Assets/Images/partner-massage.jpg";
 import ElectronicHealthRecord from "src/Assets/Images/partner-electronic-health-record.jpg";
 import Female from "src/Assets/Images/partner-female.jpg";
+import Spa from "src/Assets/Images/partner-spa.jpg";
+import Partnership from "src/Assets/Images/partner-partnership.jpg";
 
 import "./index.css";
+import PartnerImageContainer from "./PartnerImageContainer";
 
 const Partner = () => {
-  const [slideInLeft, setSlideInLeft] = useState(false);
-  const [slideInRight, setSlideInRight] = useState(false);
-  const slideInLeftRef = useRef(null);
-  const slideInRightRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const slideInLeftDiv = slideInLeftRef.current;
-      const slideInRightDiv = slideInRightRef.current;
-      if (slideInLeftDiv && slideInRightDiv) {
-        const rectLeft = slideInLeftDiv.getBoundingClientRect();
-        const rectRight = slideInRightDiv.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
-        if (rectLeft.top >= 0 && rectLeft.top <= windowHeight) {
-          setSlideInLeft(true);
-        } else setSlideInLeft(false);
-        if (rectRight.top >= 0 && rectRight.top <= windowHeight) {
-          setSlideInRight(true);
-        } else setSlideInRight(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <section className="partner-container">
-      <h2 className="partner-heading">
-        Discover Our Innovative Solutions for Medical and Wellness Practices,
-        Providers, and Health Systems
-      </h2>
+      <div className="partner-heading-block">
+        <h2 className="partner-heading">
+          Discover Our Innovative Solutions for Medical and Wellness Practices,
+          Providers, and Health Systems
+        </h2>
+        <img
+          className="partnership-img"
+          src={Partnership}
+          alt="partnership image"
+        ></img>
+      </div>
 
-      <div className="partner-content-block">
+      <div className="partner-content-block mobile">
         <div className="partner-img-block">
           <img
             className="partner-mobile-img"
@@ -59,8 +42,7 @@ const Partner = () => {
 
         <PartnerTextCard partner={Partners[0]} />
       </div>
-
-      <div className="partner-content-block">
+      <div className="partner-content-block mobile">
         <div className="partner-img-block">
           <img
             className="partner-mobile-img"
@@ -70,8 +52,26 @@ const Partner = () => {
         </div>
         <PartnerTextCard partner={Partners[1]} />
       </div>
-      <div className="partner-content-mobile">
+      <div className="partner-content-block mobile">
         <img className="partner-mobile-img" src={Baby} alt="baby image"></img>
+      </div>
+
+      <div className="partner-content-block tablet desktop">
+        <PartnerTextCard partner={Partners[0]} />
+        <PartnerImageContainer
+          leftImg={Female}
+          topRightImg={Baby}
+          bottomRightImg={Spa}
+        />
+      </div>
+
+      <div className="partner-content-block tablet desktop desktop-reverse">
+        <PartnerTextCard partner={Partners[1]} />
+        <PartnerImageContainer
+          leftImg={Heart}
+          topRightImg={ElectronicHealthRecord}
+          bottomRightImg={XRay}
+        />
       </div>
 
       {/* <div className="partner-with-us-inner left top" ref={slideInLeftRef}>
