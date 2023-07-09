@@ -1,7 +1,7 @@
-import Icon1 from "../Assets/Icons/services-wave.svg";
-import Icon2 from "../Assets/Icons/services-brain.svg";
-import Icon3 from "../Assets/Icons/services-laptop.svg";
-import Icon4 from "../Assets/Icons/services-man.svg";
+import Icon1 from "src/Assets/Icons/services-wave.svg";
+import Icon2 from "src/Assets/Icons/services-brain.svg";
+import Icon3 from "src/Assets/Icons/services-laptop.svg";
+import Icon4 from "src/Assets/Icons/services-man.svg";
 
 const OurServices = [
   {

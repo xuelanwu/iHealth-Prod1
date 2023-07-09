@@ -1,5 +1,5 @@
-import colleagueImg from "../Assets/Images/benefit-colleague.jpg";
-import smileImg from "../Assets/Images/benefit-smile.jpg";
+import colleagueImg from "src/Assets/Images/benefit-colleague.jpg";
+import smileImg from "src/Assets/Images/benefit-smile.jpg";
 
 const Benefits = [
   {

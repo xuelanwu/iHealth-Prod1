@@ -102,6 +102,12 @@
     display: flex;
   }
 
+  .nav-links {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
   .nav-signin-span {
     display: inline-block;
   }

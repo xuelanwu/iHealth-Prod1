@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 
-import { getProviders } from "src/config/urls";
 import ButtonsSearchDonate from "./ButtonsSearchDonate";
 import ProviderAutocomplete from "./ProviderAutocomplete";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
-import { FormControlLabel, Checkbox, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
 

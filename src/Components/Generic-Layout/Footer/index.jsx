@@ -5,7 +5,7 @@ import FooterLinkCard from "./FooterLinkCard";
 import { Select, MenuItem } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
-import SocialMedia from "src/Constants/SocialMedia.js";
+import SocialMedia from "src/Constants/HomePage/SocialMedia.js";
 import FooterLink from "src/Constants/FooterLink.js";
 
 import "./index.css";

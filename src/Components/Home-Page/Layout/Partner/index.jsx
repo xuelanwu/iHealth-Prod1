@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 import PartnerTextCard from "./PartnerTextCard";
 
-import Partners from "src/Constants/Partners.js";
+import Partners from "src/Constants/HomePage/Partners.js";
 
 import Baby from "src/Assets/Images/partner-baby.jpg";
 import XRay from "src/Assets/Images/partner-x-ray.png";

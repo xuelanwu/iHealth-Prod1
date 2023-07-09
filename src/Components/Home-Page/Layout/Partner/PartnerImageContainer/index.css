@@ -28,6 +28,7 @@
 .partner-img-stack-top-bottom {
   flex-grow: 1;
   width: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 1024px) {
