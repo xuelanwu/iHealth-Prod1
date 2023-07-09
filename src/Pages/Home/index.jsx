@@ -2,33 +2,33 @@
 import React from "react";
 
 //Import Components
-import Hero from "../../Components/Home-Page/Layout/Hero/Hero"
-import OurServices from "../../Components/OurServices";
-import HowItWorks from "../../Components/HowItWorks";
-import PartnerWithUs from "../../Components/PartnerWithUs";
-import NFInformation from "src/Components/Home-Page/Layout/NfInformation/NFInformation";
-import NFCommunity from "src/Components/Home-Page/Layout/NfCommunity/NFCommunity";
+import Hero from "src/Components/Home-Page/Layout/Hero/Hero";
+import Provider from "src/Components/Home-Page/Layout/Provider";
+import Community from "src/Components/Home-Page/Layout/Community";
+import Team from "src/Components/Home-Page/Layout/Team";
+import Services from "src/Components/Home-Page/Layout/Services";
+import HowItWorks from "../../Components/Home-Page/Layout/HowItWorks";
+import Benefit from "src/Components/Home-Page/Layout/Benefit";
+import PartnerWithUs from "../../Components/Home-Page/Layout/Partner";
+import Information from "src/Components/Home-Page/Layout/Information";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 
+import "./index.css";
 
-
-
-const index = () => 
-{
-
-
+const index = () => {
   return (
-    <>
+    <div className="home-page">
       <Hero />
-      <NFCommunity />
-      <OurServices />
+      <Provider />
+      <Community />
+      <Team />
+      <Services />
       <HowItWorks />
+      <Benefit />
       <PartnerWithUs />
-      <NFInformation />
-
-      {/* Under Construction Pop-up component */}
+      <Information />
       <UnderConstruction />
-    </>
+    </div>
   );
 };
 

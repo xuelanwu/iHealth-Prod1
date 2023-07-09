@@ -1,41 +1,40 @@
 //Import Libraries/Packages
-import React, { useState } from 'react'
-
+import React, { useState } from "react";
 
 //Import Styles
 import "./Hero.css";
 
-
 //import local assets/files/components
-import Provider from "./SubComponents/Provider/Provider";
-import Community from "./SubComponents/Community/Community";
-import imageforHero from "../../../../Assets/Images/hero-main-pic.png";
+import HeroMobile from "src/Assets/Images/hero-5x.png";
+import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 
-
-
-const Hero = () => 
-{
-
-
+const Hero = () => {
   return (
-    <>
-      <div className="hero-wrapper">
-        <div className="hero-image-container">
-          <img src={imageforHero} loading='lazy' alt="Doctor with patients image for Hero section" />
-        </div>
-        <div className="hero-text-container">
-          <h5 className="comitted">-Committed to success</h5>
-          <h2 className="healthcare">Revolutionizing Healthcare</h2>
-          <h3 className="complex">For Patients with Complex Diseases</h3>
-          <h4 className="integrated">
+    <section className="hero-container">
+      <div className="hero-container-inner">
+        <div className="hero-heading-container">
+          <h3 className="hero-heading-h3">
+            <HandshakeOutlinedIcon />
+            Committed to success
+          </h3>
+          <h1 className="hero-heading-h1">Revolutionizing Healthcare</h1>
+          <h2 className="hero-heading-h2">
+            For Patients with Complex Diseases
+          </h2>
+          <h4 className="hero-heading-h4">
             Our integrated platform empowers patients and improves Healthcare
             Outcomes
           </h4>
         </div>
+        <div className="hero-image-container">
+          <img
+            className="hero-img"
+            src={HeroMobile}
+            alt="Doctor with patients image for Hero section"
+          />
+        </div>
       </div>
-      <Provider /> 
-      <Community />
-    </>
+    </section>
   );
 };
 
