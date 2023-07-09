@@ -11,8 +11,6 @@ import HowItWorks from "../../Components/Home-Page/Layout/HowItWorks";
 import Benefit from "src/Components/Home-Page/Layout/Benefit";
 import PartnerWithUs from "../../Components/Home-Page/Layout/Partner";
 import Information from "src/Components/Home-Page/Layout/Information";
-import NFInformation from "src/Components/Home-Page/Layout/NfInformation/NFInformation";
-import NFCommunity from "src/Components/Home-Page/Layout/NfCommunity/NFCommunity";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 
 import "./index.css";
@@ -24,15 +22,11 @@ const index = () => {
       <Provider />
       <Community />
       <Team />
-      {/* <NFCommunity /> */}
       <Services />
       <HowItWorks />
       <Benefit />
       <PartnerWithUs />
-      {/* <NFInformation /> */}
       <Information />
-
-      {/* Under Construction Pop-up component */}
       <UnderConstruction />
     </div>
   );

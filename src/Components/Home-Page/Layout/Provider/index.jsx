@@ -7,16 +7,21 @@ import ProviderAutocomplete from "./ProviderAutocomplete";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import { FormControlLabel, Checkbox, Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
-import LocationIcon from "src/Assets/Icons/location-icon.svg";
+import ProviderServices from "src/Services/provider";
 
 import "./index.css";
+import ProviderCheckbox from "./ProviderCheckbox";
 
 const Provider = () => {
-  const [cities, setCities] = useState([]);
+  const [diseases, setDiseases] = useState([]);
+  const [states, setStates] = useState([]);
   const [specialities, setSpecialities] = useState([]);
 
-  /* This should move to constants folder/file in the future */
-  const diseases = ["Neurofibromatosis(NF)", "Select Disease"];
+  const [diseaseValue, setDiseaseValue] = useState("");
+  const [specialtyValue, setSpecialtyValue] = useState("");
+  const [stateValue, setStateValue] = useState("");
+  const [acceptingNewPatients, setAcceptingNewPatients] = useState(false);
+  const [treatsChildren, setTreatsChildren] = useState(false);
 
   const GetLocationInfo = () => {
     navigator.geolocation.getCurrentPosition(
@@ -27,14 +32,29 @@ const Provider = () => {
 
   useEffect(() => {
     const fetchProviders = async () => {
-      const res = await axios.get(`${getProviders}`);
+      try {
+        const diseaseRes = await ProviderServices.handleGetAllDisease();
+        const specialtyRes = await ProviderServices.handleGetAllSpeciality();
+        const stateRes = await ProviderServices.handleGetAllState();
 
-      const { city, specialty } = res.data.fields;
-      setCities(city);
-      setSpecialities(specialty);
+        setDiseases(diseaseRes.data);
+        setStates(stateRes.data);
+        setSpecialities(specialtyRes.data);
+      } catch (e) {
+        console.log(e);
+      }
     };
     fetchProviders();
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(diseaseValue);
+    console.log(specialtyValue);
+    console.log(stateValue);
+    console.log(treatsChildren);
+    console.log(acceptingNewPatients);
+  };
 
   return (
     <section className="provider-container">
@@ -52,42 +72,41 @@ const Provider = () => {
           />
           Search & Find a Medical or Wellness Provider
         </h2>
-        <form className="provider-form">
+        <form className="provider-form" onSubmit={handleSubmit}>
           <div className="provider-form-inputs">
             <div className="provider-form-field">
-              <ProviderAutocomplete options={diseases} label="Disease" />
-              <FormControlLabel
-                control={<Checkbox />}
+              <ProviderAutocomplete
+                options={diseases}
+                label="Disease"
+                value={diseaseValue}
+                onInputChange={setDiseaseValue}
+              />
+              <ProviderCheckbox
                 label="Accepting New Patients"
-                style={{ color: "#07235B" }}
-                sx={{
-                  "@media (max-width: 1023px)": {
-                    display: "none",
-                  },
-                }}
+                value={acceptingNewPatients}
+                onCheckboxChange={setAcceptingNewPatients}
               />
             </div>
             <div className="provider-form-field">
               <ProviderAutocomplete
                 options={specialities}
                 label="Specialties"
+                value={specialtyValue}
+                onInputChange={setSpecialtyValue}
               />
-              <FormControlLabel
-                control={<Checkbox />}
+              <ProviderCheckbox
                 label="Treats Children"
-                style={{ color: "#07235B" }}
-                sx={{
-                  "@media (max-width: 1023px)": {
-                    display: "none",
-                  },
-                }}
+                value={treatsChildren}
+                onCheckboxChange={setTreatsChildren}
               />
             </div>
             <div className="provider-form-field">
-              <ProviderAutocomplete options={cities} label="City" />
-              {/* <button onClick={GetLocationInfo} className="provider-location-btn">
-              Use My Location
-            </button> */}
+              <ProviderAutocomplete
+                options={states}
+                label="State"
+                value={stateValue}
+                onInputChange={setStateValue}
+              />
               <Button
                 variant="text"
                 startIcon={<PinDropIcon style={{ marginBottom: "5px" }} />}
