@@ -79,6 +79,10 @@
     padding: 3rem;
   }
 
+  .information-header-heading-card {
+    height: 100%;
+  }
+
   .information-header-heading {
     font-size: 3rem;
     font-weight: 700;

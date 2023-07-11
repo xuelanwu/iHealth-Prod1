@@ -161,16 +161,13 @@
     text-align: left;
   }
 
+  /* update line-height to 143% */
   .team-join-slogan {
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 143%;
     text-align: left;
     padding-bottom: 1rem;
-  }
-
-  .team-join-slogan br {
-    display: none;
   }
 
   .team-join-btn {
