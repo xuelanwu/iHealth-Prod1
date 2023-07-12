@@ -54,7 +54,7 @@ const FooterLink = [
     category: "Policies",
     links: [
       {
-        title: "Private Policy",
+        title: "Privacy Policy",
         path: "#",
       },
       {
