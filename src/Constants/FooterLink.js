@@ -7,7 +7,7 @@ const FooterLink = [
         path: "#",
       },
       {
-        title: "Board of Direction",
+        title: "Board of Directors",
         path: "#",
       },
       {
