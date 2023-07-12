@@ -85,12 +85,13 @@
     line-height: 120%;
   }
 
+  /* update line-height to 143px */
   .community-description {
     width: 70%;
     max-width: 1004px;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 143%;
   }
 
   .community-teams {
